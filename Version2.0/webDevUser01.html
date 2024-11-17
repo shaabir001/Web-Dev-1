@@ -19,7 +19,61 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+#banner{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(0, 174, 255);
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 15%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 40%;
+}
+
+.left.eye {
+    left: 30%;
+}
+
+.right.eye {
+    right: 30%;
+}
+
+.pupil {
+    background: #000;
+    width: 40%;
+    height: 80%;
+    position: relative;
+    left: 30%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -34,22 +88,41 @@
                 Watch out world of web design here I come!
             </p>
 
-            <h2>Heading Examples</h2>
+            <h2>Heading Example</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+<h2>Welcome to Web Dev</h2>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+<h2>This is Heading <del>One</del> Two. This is <ins> NOT </ins> A JOKE YOU MUST GET OUT<sub> LEAVE LEAVE LEAVE </sub><sup>THEYRE ALMOST HERE HELP. <small> HELP HELP HELP <progress value="22" max="100" > GETTING OUT </progress > </small></sup><hr><abbr title="GET OUT" > GET OUT </abbr></h2>
+    <h1>THIS IS THE MOST AWESOME WEBSITE YOU WILL EVER SEE</h1>
+    <section>
+        <h2>THIS IS AWESOME BECAUSE</h2>
+        <p>SMILE FACE!</p>
+    </section>
+    
+    <section>
+        <h2>WE BRING THE BOOM</h2>
+        <p>DOUBLE CHUNK CHOCOLATE COOKIE</p>
+    </section>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
 
@@ -57,7 +130,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">Wyatt Osterdyk</a></center>
         </p>
 
     </footer>
