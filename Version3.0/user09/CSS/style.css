@@ -42,3 +42,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
  }
+
+li {
+	text-align: left;
+	color:aliceblue
+}
