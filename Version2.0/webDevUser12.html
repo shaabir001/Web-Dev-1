@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Shabir 
+        Date Completed: 11-13-24
     -->
 
 <head>
@@ -19,13 +19,63 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+div#face { 
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto; 
+    position: relative;
+    background: rgb(251, 255, 0);
+    margin-top: 2rem;
+} 
 
+
+div#face, div#face * { 
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%; 
+    height: 25%;
+    background: #e70a0a;
+    position: absolute;
+    top: 20%;
+} 
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 30%;
+}
+
+.pupil {
+    background: #dd0c0c;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #f40303;
+}
     </style>
 </head>
 
+
 <body>
     <main class="wideMargin">
-
         <!-- Your 1st Heading-->
         <h1>About Me</h1>
         <div id="tags">
@@ -35,21 +85,43 @@
             </p>
 
             <h2>Heading Examples</h2>
-
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <center>
+                <h1> Welcome</h1>
+            </center>
+            <h2>my name is shabir</h2>
+            <h3>i like soccer </h3>
+            <h4>i like walkinng </h4>
+            <h5>i like learn coding</h5>
+            <h6>I like ride a bike</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            I like ride a <del>bike </del>
+            I liek ride a <ins>bike</ins>
+            I like ride a <sub>bike</sub>
+            I like ride a <small>bike</small>
+            I like ride a bike <progress value="90" max="100">bike</progress>
+            I like ride a
+            I like ride a <hr>bike 
+            I like ride a <abbr title="bike">B</abbr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
 
@@ -57,7 +129,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[shabir]</a></center>
         </p>
 
     </footer>
