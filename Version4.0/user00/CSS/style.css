@@ -11,11 +11,11 @@
 	cursor: pointer;
 }
 
-.button1 {
+.button-smallradius {
 	border-radius: 8px;
 }
 
-.button2 {
+.button-largeradius {
 	border-radius: 30%;
 }
 
@@ -77,3 +77,25 @@ h1, h2, h3, h4, h5, h6{
    box-shadow: 0 6px #667;
    transform: translateY(5px);
  }
+ .title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  #morecontent {
+	background-color: yellow;
+  }
+  
+  #hireButtons {background-color: #4CAF50;}
+  #footerTable {background-color: #8842d5;}
+  *
+  {
+   color: #4CAF50;
+}
