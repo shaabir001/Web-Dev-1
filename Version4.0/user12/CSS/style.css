@@ -12,27 +12,11 @@
 }
 
 .button1 {
-	border-radius: 30px;
+	border-radius: 8px;
 }
 
 .button2 {
 	border-radius: 30%;
-}
-
-.button span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.7s;
-}
-
-.button span:after {
-	content: '\00bb';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.7s;
 }
 
 .red {
@@ -46,6 +30,114 @@ td {
 table {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+.myButton {
+	box-shadow: inset 0px 1px 0px 0px #caefab;
+	background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color: #77d42a;
+	border-radius: 6px;
+	border: 1px solid #268a16;
+	display: inline-block;
+	cursor: pointer;
+	color: #306108;
+	font-family: Arial;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 12px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #aade7c;
+}
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color: #5cb811;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#hireButtons {
+	background-color: #caefab;
+}
+
+#footerTable {
+	background-color: #caefab;
+}
+
+* {
+	background-color: wheat;
+}
+
+.Button3 {
+	box-shadow: 3px -4px 0px 0px #899599;
+	background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color: #ededed;
+	border-radius: 15px;
+	border: 1px solid #d6bcd6;
+	display: inline-block;
+	cursor: pointer;
+	color: #3a8a9e;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 9px 25px;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px #e1e2ed;
+}
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color: #bab1ba;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.Button4 {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color: #599bb3;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 13px 32px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #3d768a;
+}
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color: #408c99;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
 }
 
 h1,
