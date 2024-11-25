@@ -124,8 +124,6 @@ h1, h2, h3, h4, h5, h6{
     text-align:center;
     border: 2px solid rgb(147, 147, 147);
 	transform: rotate(.1deg);
-	flex-grow: calc(110);
-	content: url("https://www.youtube.com/watch?v=xvFZjo5PgG0");
 }
 
 #hireButtons {
