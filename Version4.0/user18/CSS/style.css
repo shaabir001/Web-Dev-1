@@ -11,17 +11,17 @@ table {
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#ef7fca26; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #ffffff;
 }
 
 .button {
-	background-color: #4CAF50;
+	background-color: #af4c9e;
 	border: none;
 	color: white;
 	padding: 20px;
@@ -42,7 +42,7 @@ th {
 }
 
 .red {
-	background-color: #ff0000;
+	background-color: #e28cea;
 }
 
 td{
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .title{
-	color: red;
+	color: #ef7fca;
 	font-family: 'Trebuchet MS', sans-serif; 
   }
   
@@ -70,3 +70,12 @@ h1, h2, h3, h4, h5, h6{
   .title-small {
 	font-size: .5rem;
   }
+
+  #morecontent {
+	background-color: rgb(210, 141, 187);
+  }
+
+  *{
+    text-align:right;
+    border: 2px solid rgba(241, 198, 224, 0.155);
+}
