@@ -33,8 +33,7 @@
 }
 
 * {
-    text-align: left;
-    border: 8px dashed rgb(4, 159, 242);
+    transform: rotate(-35deg);
 }
 
 #footerTable {
