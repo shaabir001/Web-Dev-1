@@ -32,16 +32,16 @@
     background-color: yellow;
 }
 
-* {
-    transform: rotate(-35deg);
-}
-
 #footerTable {
     background-color: #80b5ea;
 }
 
 #hireButtons {
     background-color: blueviolet;
+}
+
+#nameplate {
+    width: 5;
 }
 
 .button-largeRadius {
