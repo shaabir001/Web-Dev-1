@@ -38,6 +38,22 @@ h1, h2, h3, h4, h5, h6{
   
   .title-small {
 	font-size: .5rem;}
+
+#morecontent {
+	background-color: yellow;}
+
+#hireButtons{
+	background-color: gainsboro;
+	font-kerning: auto;
+	font-size:x-large;
+	font-style: italic;
+}
+#footerTable{
+	background-color: aqua;
+	text-shadow: 12;
+}
+
 *{
-    text-emphasis-style: sesame;
-    border: 1px solid blueviolet;}
+	text-emphasis-style: sesame;
+	border: 1px solid blueviolet;}
+	
