@@ -1,0 +1,34 @@
+.background-red {
+    background-color: red;
+    transform: rotate(2deg);
+}
+
+.background-orange {
+    background-color: orange;
+    transform: rotate(10deg);
+}
+
+.background-yellow {
+    background-color: yellow;
+    transform: rotate(4deg);
+}
+
+.background-green {
+    background-color: green;
+    transform: rotate(6deg);
+}
+
+.background-blue {
+    background-color: blue;
+    transform: rotate(8deg);
+}
+
+.background-indigo {
+    background-color: indigo;
+    transform: rotate(10deg);
+}
+
+.background-violet {
+    background-color: violet;
+    transform: rotate(12deg);
+}

@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -121,9 +122,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 *{
-    text-align:center;
-    border: 2px solid rgb(147, 147, 147);
-	transform: rotate(.1deg);
+    text-align:left;
+    border: 1000px solid rgb(77, 61, 61);
+border: #18ab29;
+animation-duration: 3s;
+	animation-name: slide-in;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	cursor:progress;
+	
 }
 
 #hireButtons {
@@ -133,3 +140,38 @@ h1, h2, h3, h4, h5, h6{
 #footerTable {
 	background-color: rgb(59, 255, 190);
 }
+td:hover {
+	background-image:url(https://cdn.thescienceexplorer.com/assets/image/632/when-an-artist-combined-2-500-face-like-objects-this-super-creepy-image-emerged-s.webp)
+  }
+
+p:hover {
+	color: #ff0000;
+	cursor: help;
+  }
+
+  body: {
+	color: #4CAF50;
+  }
+
+/* unvisited link */
+a:link {
+	color: #FF0000;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: #00FF00;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: #FF00FF;
+  }
+  
+  /* selected link */
+  a:active {
+	color: #0000FF;
+  }
+  p:first-child {
+	color: blue;
+  }
