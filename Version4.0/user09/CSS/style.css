@@ -129,7 +129,7 @@ animation-duration: 3s;
 	animation-name: slide-in;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	cursor:progress;
+	cursor:cell;
 	
 }
 
@@ -145,8 +145,7 @@ td:hover {
   }
 
 p:hover {
-	color: #ff0000;
-	cursor: help;
+	color: #ffffff;
   }
 
   body: {
@@ -155,7 +154,7 @@ p:hover {
 
 /* unvisited link */
 a:link {
-	color: #FF0000;
+	color: #ffffff;
   }
   
   /* visited link */
@@ -165,7 +164,8 @@ a:link {
   
   /* mouse over link */
   a:hover {
-	color: #FF00FF;
+	color: #fed8d7;
+	cursor: zoom-in
   }
   
   /* selected link */
