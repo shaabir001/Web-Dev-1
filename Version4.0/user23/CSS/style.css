@@ -126,3 +126,21 @@ h6 {
   } 
  #footerTable {background-color: #b1eef6}
  #hireButtons {background-color: #2e466e;}
+
+ #knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  
+  div li::marker{
+	color: red;
+  }
+  #knowledge li::marker{
+	content:"😜 ";
+  }
+  @import url(rainbow.css);
+   div li:hover {
+	background-color: black;
+  }
