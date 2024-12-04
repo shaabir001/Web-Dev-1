@@ -1,66 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Yusuf Diriye 
+        Date Completed: 11/14/24
     -->
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title>User 10 Version 2.0 </title>
 
-    <!-- Meta -->
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev Tags and DIV's">
 
-    <!-- CSS -->
+   
     <link rel="stylesheet" href="style.css">
 
     <style>
+        
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
 
+        
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: yellow;
+            margin-top: 2rem;
+        }
+
+        div#face, div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
+
+       
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
     </style>
+
 </head>
 
 <body>
     <main class="wideMargin">
 
-        <!-- Your 1st Heading-->
-        <h1>About Me</h1>
+        
+        <h1>Web Development Journey</h1>
+
+        <h2>Learning to Use Divs and Other HTML Elements</h2>
+        
         <div id="tags">
             <p>
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it.
-                Watch out world of web design here I come!
+                Watch out world of web design, here I come!
             </p>
 
-            <h2>Heading Examples</h2>
-
-            <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-
-            <h2>Examples of "Other" HTML elements</h2>
-
-            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h2>Examples of "Other" HTML Elements</h2>
+            
+            
+            <p><del>This text has a strike-through.</del></p> 
+            <p><ins>This text is underlined.</ins></p> 
+            <p>H2O is water. H<sub>2</sub>O</p> 
+            <p>E = mc<sup>2</sup></p> 
+            <p>This is a <small>small</small> text.</p>
+            <p><progress value="22" max="100"></progress> Task progress: 22%</p> 
+            <hr>
+            <p><abbr title="World Health Organization">WHO</abbr></p> 
         </div>
+
+        
         <div id="banner">
+            <h3>Welcome to My Web Development Page!</h3>
+            <p>This is a banner that shows how to style content with <div> elements.</p>
         </div>
-        <div id="face">
 
+        
+        <div id="face">
+            <div class="left eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="right eye">
+                <div class="pupil"></div>
+            </div>
+            <div id="mouth"></div>
         </div>
+
+        
+        <section>
+            <h2>Introduction</h2>
+            <p>This is an introduction to web development and how to structure content using HTML and CSS. I am learning how to create organized, styled webpages!</p>
+        </section>
+
+       
+
     </main>
 
-
     <footer>
-
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">Yusuf Diriye </a></center>
         </p>
-
     </footer>
+
 </body>
 
 </html>
