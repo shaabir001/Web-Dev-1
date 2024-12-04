@@ -10,9 +10,10 @@
 }
 
 .container {
-  display: inline-block;
+  display: inline-block;  
   margin: 3%;
-  perspective: 1000px;
+color: 1000px;
+
 }
 
 .flipper {
