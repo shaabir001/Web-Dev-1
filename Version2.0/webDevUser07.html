@@ -19,10 +19,65 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner{
+    border: 5px outset rgb(104, 52, 52);
+    background-color: lightblue;
+    text-align: center;
+    }
 
+    div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(0, 238, 255, 0.72);
+    margin-top: 2rem;
+}
+
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #a44d4d;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
-
+    
 <body>
     <main class="wideMargin">
 
@@ -37,29 +92,49 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1> Weird Ai Generated Usernames</h1>
+            <h2> Violent Spongebob</h2>
+            <h3> Interesting Fox </h3>
+            <h4> Playful Cloud</h4>
+            <h5> Immobile Device</h5>
+            <h6> Lunatic Mask</h6>
+            <hr>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            I cant find my <del>Wallet</del> I left it at the  <!--A Strike through the Text. -->
+            <abbr title="National Basketball League">NBA</abbr>
+            <ins> Which was really not good.</ins>
+            <sub> n </sub> I decided to head back to the NBA Stadium <sup> 90000</sup>
+            <small> I coulnt find my Wallet anywhere, I was this close </small> <progress value = "99" max = "100"></progress>
+            <hr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
 
 
     <footer>
-
+        <a> </a>
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Top Secret Link <a href="https://docs.google.com/document/d/1kXaz1KjLhzVkw-d87DKBVKg5s-mqR1L3dgSrrrVzzzA/edit?usp=sharing" target="_blank"> Free Robux </a></center>
         </p>
-
+        
     </footer>
 </body>
 
