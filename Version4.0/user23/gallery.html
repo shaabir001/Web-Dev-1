@@ -2,20 +2,18 @@
 <html lang="en">
 <!--Version 4.0
         Name:
-        Date Completed: 1.4c 
+        Date Completed:
     -->
 
 <head>
 
-    <title>My Work as a Web Developer</title>
-    
-    
+    <title>Gallery</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Version 4.0 - Portfolio">
+    <meta name="description" content="SHS WebDev Version 4.0 - Gallery">
 
     <!-- CSS -->
     <!-- Bootstrap -->
@@ -33,7 +31,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-
 
 
     <!-- Custom styles for this template -->
@@ -62,13 +59,13 @@
                 <ul class="navbar-nav me-auto">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="#" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="display.html" class="nav-link">Display</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a href="gallery.html" class="nav-link">Gallery</a>
@@ -84,59 +81,81 @@
             </div>
         </div>
     </nav>
-
     <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="container-fluid mt-3">
 
-        <h1 class="text-left my-3 title" tabindex="0">Check out my work!</h1>
+        <h1 class="text-left my-3 title" tabindex="0">Random store</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3 id="topHeading">I'm a Web Developer</h3>
-        <div id="knowledge">
-            <span>Inline Element</span>
-            <li>CSS
-                <ul>
-                    <li>Classes</li>
-                    <li>Selectors</li>
-                    <li>ID's</li>
-                </ul>
-            </li>
-            <li>HTML
-                <ul>
-                    <li>Tables</li>
-                    <li>DIV's</li>
-                    <li>Nav Bar</li>
-                </ul>
-            </li>
+
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://www.millerchemical.com/wp-content/uploads/2021/03/pineapple-176818583.png" alt="Pineapple">
+                        <p class="caption">Fruit</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Pineapple" target="_blank">
+                            <h2 class="mh-100">Pineapple</h2>
+                        </a>
+                        <p class="description">The pineapple is a tropical plant with an edible fruit, known for its sweet and tangy taste. It is native to South America but is now grown in tropical and subtropical regions worldwide.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://assets.editorial.aetnd.com/uploads/2011/06/gettyimages-142198198.jpg" alt="Eiffel Tower">
+                        <p class="caption">Landmark</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Eiffel_Tower" target="_blank">
+                            <h2 class="mh-100">Eiffel Tower</h2>
+                        </a>
+                        <p class="description">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It was completed in 1889 and has become a global cultural icon of France and one of the most-visited paid monuments in the world.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://www.worldanimalprotection.us/cdn-cgi/image/fit=cover,width=1600,format=auto/siteassets/images/wildlife/kangaroos/kangaroo-joey-getty.jpg" alt="Kangaroo">
+                        <p class="caption">Animal</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Kangaroo" target="_blank">
+                            <h2 class="mh-100">Kangaroo</h2>
+                        </a>
+                        <p class="description">Kangaroos are marsupials native to Australia. Known for their powerful hind legs, large tails, and unique hopping movement, they are an iconic symbol of the Australian wilderness.</p>
+                    </div>
+                </div>
+            </div>
+<div class="container">
+    <div class="flipper">
+        <div class="front">
+            <img src="https://www.unjourdeplusaparis.com/wp-content/uploads/2015/05/photo-louvre-insolite.jpg" alt="Louvre Museum">
+            <p class="caption">Museum</p>
         </div>
-        <p>
-            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
-        </p>
-        <p>
-            I will use my knowledge to create an amazing website for you and your needs.
-        </p>
-        <div>
-            <table id="rainbow">
-                <tr>
-                    <td class="background-red">
-                    </td>
-                    <td class="background-orange">
-                    </td>
-                    <td class="background-yellow">
-                    </td>
-                    <td class="background-green">
-                    </td>
-                    <td class="background-blue">
-                    </td>
-                    <td class="background-indigo">
-                    </td>
-                    <td class="background-violet">
-                    </td>
-                </tr>
-            </table>
+        <div class="back">
+            <a href="https://en.wikipedia.org/wiki/Louvre" target="_blank">
+                <h2 class="mh-100">Louvre Museum</h2>
+            </a>
+            <p class="description">The Louvre is the world's largest and most visited art museum. Located in Paris, it is home to thousands of works of art, including the famous painting, the Mona Lisa.</p>
         </div>
+    </div>
+</div>
+
+
+
+
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
