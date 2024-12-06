@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -56,7 +58,7 @@ h6 {
 
 #morecontent {
 	background-color: yellow;
-}
+} 
 
 #hireButtons {
 	background-color: gainsboro;
@@ -78,16 +80,20 @@ p+* {
 	background-color: #FFFF00;
 }
 
-div li::marker {
+div#knowledge li::marker {
 	color: red;
 }
 
-div ul::marker > {
-	content: "😜";
+div#knowledge >li::marker{
+	color:rgb(95, 95, 218);
 }
 
-
+div#footerTable:hover{
+	border: 1vh dotted black;
+	color: slategray;
+	text-shadow: 1vh;
+}
 /*{
 	text-emphasis-style: sesame;
 	border: 1px solid blueviolet;}
-	
+	*/

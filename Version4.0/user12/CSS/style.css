@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -73,7 +75,7 @@ table {
 }
 
 #morecontent {
-	background-color: yellow;
+	background-color: rgb(209, 252, 19);
 }
 
 #hireButtons {
@@ -84,8 +86,22 @@ table {
 	background-color: #caefab;
 }
 
-* {
-	background-color: wheat;
+* {}
+
+#knowledge>* {
+	border: 3px red solid;
+}
+
+p+* {
+	background-color: #FFFF00;
+}
+
+div li::marker {
+	color: red;
+}
+
+td:hover {
+	background-color: black;
 }
 
 .Button3 {
