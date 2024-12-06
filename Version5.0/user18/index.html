@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-    Name:
-    Date Completed:
+    Name: Harley Moreno
+    Date Completed: 12-6-24
 -->
 
 <head>
@@ -45,8 +45,13 @@
         }
         
         .demo-content.bg-alt {
-            background: #abb1b8;
-        }
+            background: #8fbbc485;
+        }.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-color-type: var(--bs-table-striped-color);
+  --bs-table-bg-type: rgba(222, 249, 250)
+}
+
+
     </style>
 
     <body>
@@ -154,14 +159,59 @@
             <!---------Table-Striped------------------------------------------->
             <div class="container mt-3" name="table-striped">
             </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Row</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Clark</td>
+                        <td>Kent</td>
+                        <td>clarkkent@mail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>John</td>
+                        <td>Carter</td>
+                        <td>johncarter@mail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Peter</td>
+                        <td>Parker</td>
+                        <td>peterparker@mail.com</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <!---------List-Group---------------------------------------------->
             <div class="container mt-3" name="list-group">
             </div>
-
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-regular fa-heart"></i> Pictures <span class="badge bg-secondary badge-pill badge-primary pull-right active">145</span>
+                </a>
+                <a href="https://www.spotify.com/" target="_blank" class="list-group-item list-group-item-action">
+                    <i class="fa-regular fa-star"></i> Music <span class="badge bg-secondary badge-pill badge-primary pull-right active">50</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-regular fa-sun"></i> Videos <span class="badge bg-secondary badge-pill badge-primary pull-right">8</span>
+                </a>
+            </div>
             <!---------Form Button--------------------------------------------->
             <div class="container mt-3 vstack" name="form-button">
             </div>
+            
+
         </main>
 
         <!---------------------------------- Begin the footer ------------------------------------->
