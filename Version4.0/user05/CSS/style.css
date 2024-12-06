@@ -47,8 +47,13 @@ td{
 	padding:20px;
 }
 
-table{
-	margin-left: auto;
+table{.card {	
+	display: inline;
+	display: inline-block;
+	/* Other existing styles for the .card class */
+  }
+	margin-left: auto;	
+	display: inline-block;
 	margin-right: auto;
 }.title{
 	color: red;
