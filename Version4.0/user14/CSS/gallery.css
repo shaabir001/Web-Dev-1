@@ -9,7 +9,7 @@
     margin: 3%;
     perspective: 1000px;
 }
-/*.flipper {
+.flipper {
     position: relative;    
     transition: 0.6s;
     transform-style: preserve-3d;
