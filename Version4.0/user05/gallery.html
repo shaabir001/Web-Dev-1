@@ -1,22 +1,4 @@
-<html lang="en">
-<!--Version 4.0 
-	Name:
-	Date Completed:
-    -->
 
-<head>
-
-    <title>Web Development User #05</title>
-
-</head>
-
-<body>
-
-    <center>My name is User #05</center>
-
-</body>
-
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 4.0
@@ -26,13 +8,13 @@
 
 <head>
 
-    <title>Hire Me For Your Web Development Needs</title>
+    <title>Gallery</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Version 4.0 - Index">
+    <meta name="description" content="SHS WebDev Version 4.0 - Gallery">
 
     <!-- CSS -->
     <!-- Bootstrap -->
@@ -43,6 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Custom -->
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -50,11 +33,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
+
     <!-- Custom styles for this template -->
     <style type="text/css">
         footer {
             font-size: 12px;
             text-align: center;
+        }
+        
+        #rainbow {
+            width: 100%;
         }
     </style>
 </head>
@@ -84,8 +72,7 @@
                         <a href="gallery.html" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled"
-                            tabindex="-1">Contact</a>
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
                     </li>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </ul>
@@ -99,69 +86,81 @@
 
     <main class="container-fluid mt-3">
 
-        <h1 class="text-left my-3 title" tabindex="0">Check out my work!</h1>
+        <h1 class="text-left my-3 title" tabindex="0">Check out my favorite images</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3 id="topHeading">I'm a Web Developer</h3>
-        <table id="hireButtons">
-            <tr>
-                <td>
-                    <button>Hire me</button>
-                </td>
-                <td>
-                    <button class="button">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button1">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button2">Hire me</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button button2 red">Hire me</button>
-                    <td>
-                        <button class="button newButton1">Button large radius </button>                      </td><span class="title title-large">Example of a Heading Title</span>
 
-                      <td>
-                        <button class="button newButton2">Button small radius </button>
-                        <span class="title title-small">Example of a Footer Title</span>
-                    </td>
-                      <td>
-                        <button class="button newButton3">Button 3 </button>
-                      </td>
-            </tr>
-        </table>
-        <div class="pt-3">
-            <!-- spacing div-->
-
-            <span class="title">Example of a Heading Title</span>
-
-            <div class="content">
-
-                <p>
-                    Page content..
-                </p>
-
-                <p>
-                    Some more page content..
-                </p>
-
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="images/Warzone.1.jpeg""> 
+                        <p class="caption">Warzone</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://www.callofduty.com/warzone" target="_blank">
+                            <h2 class="mh-100">Warzone</h2>
+                        </a>
+                        <p class="description">Call of Duty: Warzone is one of the biggest free-to-play Battle Royale games of all time. Team up or fly in solo across several huge environments; be the last squad standing to win. Play a variety of Battle Royale game modes including special limited-time modes throughout the year.</p>
+                    </div>
+                </div>
             </div>
 
-            <p id="morecontent">
-                Even more content
-            </p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="images/download (1).jpeg"
+                         class="caption">Rocket League</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://www.rocketleague.com/en" target="_blank">
+                            <h2>Rocket League</h2>
+                        </a>
+                        <p class="description">Rocket League is a video game the combines arcade-style soccer and driving games. You play by controlling rocket-powered vehicles, which you can use to score goals with a giant soccer ball. Gameplay is energetic and chaotic as the cars can flip and fly in all directions.</p>
+                    </div>
+                </div>
+            </div>
 
-            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="images/Fortnite_Season05_NoText_SMALL-small.jpg"
+                         class="caption">Fortnite</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://www.fortnite.com/?lang=en-US" target="_blank">
+                            <h2 class="">Fortnite</h2>
+                        </a>
+                        <p class="description">Fortnite is a third person shooter survival game where the player has to survive against up to 100 other players unless you are looking to play the mode Reload which has 40 players. The total player count for each Battle Royale match is 100 and for Reload it's 40.</p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="container">
+            <div class="flipper">
+                <div class="front">
+                    <img src="images/roblox.jpeg"
+                     class="caption">Roblox</p>
+                </div>
+                <div class="back">
+                    <a href="https://en.wikipedia.org/wiki/Roblox" target="_blank">
+                        <h2 class="">Roblox</h2>
+                    </a>
+                    <p class="description">Roblox is an online game platform and game creation system developed by Roblox Corporation that allows users to program and play games created by themselves or other users.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer>
-        <span class="title">Example of a Footer Title</span>
-        <div class="container py-4" id="footerTable">
+        <span class="title d-block">Example of a Footer Title</span>
+        <div class="container py-1" id="footerTable">
             <ul class="list-unstyled d-flex justify-content-center">
                 <li class="mx-3">
                     <i class="fa-brands fa-facebook fa-3x" aria-hidden="true"></i>
@@ -185,8 +184,3 @@
 </body>
 
 </html>
-<span class="title title-large">Example of a Heading Title</span>
-<span class="title title-small">Example of a Footer Title</span>
-<table id="hireButtons">
-
-    <table id="footerTable"> 
