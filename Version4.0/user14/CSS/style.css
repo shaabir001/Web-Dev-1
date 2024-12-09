@@ -70,14 +70,12 @@ h6 {
 #footerTable {
 	background-color: aqua;
 	text-shadow: 12;
+	width: fit-content;
+	height:auto;
 }
 
 #knowledge>* {
 	border: 3px red solid;
-}
-
-p+* {
-	background-color: #FFFF00;
 }
 
 div#knowledge li::marker {
