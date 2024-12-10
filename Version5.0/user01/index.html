@@ -110,12 +110,30 @@
             <div class="container mt-3">
                 <!--Row with two equal columns-->
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="demo-content">.col-md-6</div>
+                    <div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
+                    </div><div class="col-md-1">
+                        <div class="demo-content">.col-md-1</div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="demo-content bg-alt">.col-md-6</div>
-                    </div>
+                   
                 </div>
                 <!--Row with two columns divided in 1:2 ratio-->
                 <div class="row">
@@ -230,28 +248,61 @@
         </main>
 
         <!---------------------------------- Begin the footer ------------------------------------->
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            footer {
+                background-color: #222;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+            .social-links {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+            .social-links li {
+                display: inline;
+            }
+            .social-links a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 32px; /* Increased size */
+                transition: color 0.3s;
+            }
+            .social-links a:hover {
+                color: #1DA1F2; /* Default Twitter Blue */
+            }
+        </style>
+     
+        
         <footer>
-            <span class="title">Example of a Footer Title</span>
-            <div class="container py-4" id="footerTable">
-                <ul class="list-unstyled d-flex justify-content-center">
-                    <li class="mx-3">
-                        <i class="fa-brands fa-facebook fa-3x" aria-hidden="true"></i>
-                    </li>
-                    <li class="mx-3">
-                        <i class="fa-brands fa-x-twitter fa-3x" aria-hidden="true"></i>
-                    </li>
-                    <li class="mx-3">
-                        <i class="fa-brands fa-instagram fa-3x" aria-hidden="true"></i>
-                    </li>
-                    <li class="mx-3">
-                        <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
-                    </li>
-                    <li class="mx-3">
-                        <i class="fa-brands fa-tiktok fa-3x" aria-hidden="true"></i>
-                    </li>
-                </ul>
-            </div>
+            <p>Connect with us:</p>
+            <ul class="social-links">
+                <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+            </ul>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
         </footer>
+     
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+            
+        
         <!---------------------------------- End the footer --------------------------------------->
     </body>
 
