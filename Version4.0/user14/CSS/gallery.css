@@ -21,7 +21,7 @@ p.caption {
 .description {
     font-size: 0.9em;
     padding: 0 20px 20px 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .container {
@@ -31,7 +31,7 @@ p.caption {
 }
 
 .container:hover .flipper {
-    transform: rotateY(180deg);
+    transform: rotateY(540deg);
 }
 
 .flipper {
@@ -71,5 +71,5 @@ img {
 }
 
 a {
-    color: black;
+    color: green;
 }
