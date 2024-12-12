@@ -62,14 +62,19 @@
         #footerTable {
             text-align: left;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-right: 20%;
 
+        }
+        .btn:hover {
+            color:aqua;
+            text-decoration:dotted;
         }
     </style>
 
 <body>
     <!---------------------------------- Begin the nav-bar ----------------------------------->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -96,7 +101,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled"
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link"
                             tabindex="-1">Contact</a>
                     </li>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -243,9 +248,8 @@
     </main>
 
     <!---------------------------------- Begin the footer ------------------------------------->
-    <footer class="text-center bg-body-tertiary">
+    <footer class="text-center bg-body-tertiary bg-alt">
         <span class="title" text-align="left">Social Medias:</span>
-        <h5 class="footer">Social Medias:</h5>
         <div class="container py-4" id="footerTable">
             <ul class="list-unstyled d-flex justify-content-left">
                 <!-- Section: Social media -->
