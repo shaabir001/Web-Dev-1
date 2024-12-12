@@ -60,43 +60,99 @@
 
     <body>
         <!---------------------------------- Begin the nav-bar ----------------------------------->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav me-auto">
-                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
-                        </li>
-                        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-primary" type="button">Login</button>
-                    </form>
-                </div>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Responsive Navbar</title>
+          <style>
+            /* Basic styling for the navbar */
+            body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+            }
+            .navbar {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: #333;
+              padding: 10px 20px;
+            }
+            .navbar a {
+              color: rgb(0, 204, 255);
+              text-decoration: none;
+              padding: 10px 15px;
+            }
+            .navbar a:hover {
+              background-color: #0091ff;
+              border-radius: 5px;
+            }
+            .navbar .nav-links {
+              display: flex;
+            }
+            .navbar .logo {
+              font-size: 20px;
+              font-weight: bold;
+            }
+            @media (max-width: 768px) {
+              .navbar .nav-links {
+                flex-direction: column;
+                display: none; /* Hidden by default */
+                width: 100%;
+                background-color: #00c3ff;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                z-index: 1;
+              }
+              .navbar .nav-links.active {
+                display: flex; /* Show when active */
+              }
+              .navbar .menu-toggle {
+                display: block;
+                cursor: pointer;
+              }
+              .navbar .menu-toggle span {
+                background: white;
+                height: 3px;
+                width: 25px;
+                margin: 5px;
+                display: block;
+              }
+            }
+            @media (min-width: 769px) {
+              .navbar .menu-toggle {
+                display: none;
+              }
+            }
+          </style>
+        </head>
+        <body>
+          <nav class="navbar">
+            <div color:DodgerBlue; = "logo">MyWebsite</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-        </nav>
+            <div class="nav-links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </nav>
+        
+          <script>
+            function toggleMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              navLinks.classList.toggle('active');
+            }
+          </script>
+        </body>
+        </html>
+        
         <!---------------------------------- End the nav-bar ------------------------------------->
         <!---------Jumbotron---------------------------------------------->
         <header class="p-5 bg-primary-subtle text-black" name="Jumbotron">
@@ -242,11 +298,13 @@
 
             <!---------Form Button--------------------------------------------->
             <div class="container mt-3 vstack" name="form-button">
-                <a href="form.html" class="btn btn-success btn-lg" role="button" aria-pressed="true">Form Page</a>
-                
+                <a href="form.html" 
+                   class="btn btn-lg" 
+                   style="background-color: rgb(112, 219, 255); color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px;" 
+                   role="button" 
+                   aria-pressed="true">Form Page</a>
             </div>
-        </main>
-        <br>
+            <br>
 
         <!---------------------------------- Begin the footer ------------------------------------->
         <style>
@@ -288,6 +346,7 @@
       cursor: pointer;
       font-size: 16px;
     }
+    
         </style>
      
         
