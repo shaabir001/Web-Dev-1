@@ -19,3 +19,6 @@ th {
 	color: #ffffff;
 	background-color: #3b2109;
 }
+ul {
+	list-style-image: url('sqpurple.gif');
+  }
