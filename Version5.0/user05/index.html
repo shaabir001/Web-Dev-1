@@ -48,41 +48,184 @@
 
 <body>
     <!---------------------------------- Begin the nav-bar ----------------------------------->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Navigation Bar</title>
+        <style>
+            /* General reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Navbar container */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                background-color: #333;
+            }
+    
+            /* Logo */
+            .logo a {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            /* Navigation list */
+            .nav-list {
+                list-style: none;
+                display: flex;
+                align-items: center;
+            }
+    
+            .nav-list li {
+                margin-left: 20px;
+                position: relative;
+            }
+    
+            .nav-list li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                padding: 8px 15px;
+                display: block;
+            }
+    
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Link
-                        </a>
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+    
+            .dropdown-menu {
+                list-style: none;
+                position: absolute;
+                background-color: #444;
+                top: 100%;
+                left: 0;
+                min-width: 150px;
+                display: none;
+                padding: 10px 0;
+                border-radius: 5px;
+            }
+    
+            .dropdown-menu li {
+                padding: 8px 20px;
+            }
+    
+            .dropdown-menu li a {
+                color: white;
+                text-decoration: none;
+                display: block;
+            }
+    
+            .dropdown-menu li a:hover {
+                background-color: #575757;
+            }
+    
+            .search-container {
+                display: flex;
+                align-items: center;
+            }
+    
+            .search-container input {
+                padding: 8px;
+                border: none;
+                border-radius: 4px;
+                margin-right: 10px;
+            }
+    
+            .search-container button {
+                padding: 8px 15px;
+                border: none;
+                background-color: #575757;
+                color: white;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+    
+            .search-container button:hover {
+                background-color: #444;
+            }
+    
+            /* Hover effects */
+            .nav-list li a:hover {
+                background-color: #575757;
+            }
+    
+            .search-container input:focus {
+                outline: none;
+                border: 2px solid #575757;
+            }
+    
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+    
+                .nav-list {
+                    flex-direction: column;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+    
+                .nav-list li {
+                    margin: 10px 0;
+                    width: 100%;
+                }
+    
+                .search-container {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+    
+                .search-container input {
+                    width: 80%;
+                    margin-right: 10px;
+                }
+    
+                .search-container button {
+                    width: 20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">Website</a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a href="https://www.mcdonalds.com">McDonald's</a></li>
+                            <li><a href="https://www.dominos.com">Domino's</a></li>
+                            <li><a href="https://www.wingstop.com">Wingstop</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
-                    </li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-                <form class="d-flex">
-                    <button class="btn btn-primary" type="button">Login</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </nav>
+        </header>
+    </body>
+    </html>
+    
     <!---------------------------------- End the nav-bar ------------------------------------->
     
     <!---------Jumbotron---------------------------------------------->
