@@ -1,0 +1,60 @@
+.Main {
+    background-color: gray;
+}
+
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    font-family: "tinos", sans-serif;
+    color: black;
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+footer {
+    font-family: "tinos", sans-serif;
+    font-size: 20px;
+}
+
+i>li:hover {
+    background-color: rgba(0, 0, 0, 0.27);
+    padding: 5%;
+    color: white !important
+}
+p>a:hover {
+    background-color: rgba(0, 0, 0, 0.27);
+    padding: 5%;
+    color: white !important
+}
+a>i:hover {
+    background-color: rgba(0, 0, 0, 0.27);
+    color: white !important
+}
