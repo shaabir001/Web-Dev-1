@@ -1,5 +1,7 @@
-.Main {
+body {
     background-color: gray;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/rustic-weathered-wood-logs-royalty-free-image-1654709658.jpg");
+
 }
 
 .tinos-regular {
@@ -42,6 +44,8 @@
 footer {
     font-family: "tinos", sans-serif;
     font-size: 20px;
+    width: 100%;
+    position: absolute; bottom: 0;
 }
 
 i>li:hover {
