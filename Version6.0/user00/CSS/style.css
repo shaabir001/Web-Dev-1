@@ -87,3 +87,7 @@ th {
     color: #ffffff;
     background-color: #003366;
 }
+.container td:nth-child(1) {
+    background-color: rgb(160, 82, 45);
+    color: black;
+}
