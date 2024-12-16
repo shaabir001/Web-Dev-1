@@ -38,7 +38,7 @@ a {
 
 
   .bigGreenButton {
-	width: 200px;
+	width: 300px;
 	height: 50px;
 	border-radius: 30px;
 	background-color: #660c0c;
@@ -54,4 +54,14 @@ a {
 	color: #FFFFFF;
 	background-color: #310707;
 	
+}
+
+footer {
+    position: absolute; bottom: 0;
+    width: 100%;
+    background-size: auto
+}
+
+.container {
+    background-color: red
 }
