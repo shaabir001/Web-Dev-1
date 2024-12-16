@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 4.0
+<!--Version 6.0
         Name: Matthew Lim
         Date Completed: 12/3/24
     -->
@@ -43,12 +43,34 @@
         #rainbow {
             width: 100%;
         }
+        
+        main {
+            background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/dark-and-bloody-basement-corridor-alexandre-rotenberg.jpg)
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        .description {
+            color: white;
+        }
+        
+        .caption {
+            color: white;
+        }
+        
+        .mh-100 {
+            color: white
+        }
+    </style>
     </style>
 </head>
 
 <body>
     <!---------------------------------- Begin the nav-bar ------------->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
         <div class="container-fluid">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -70,9 +92,6 @@
                     <li class="nav-item">
                         <a href="gallery.html" class="nav-link">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
-                    </li>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </ul>
                 <form class="d-flex">
@@ -85,13 +104,12 @@
 
     <main class="container-fluid mt-3">
 
-        <h1 class="text-left my-3 title" tabindex="0">Check out some Human Parts</h1>
+        <h1 class="text-center my-3 title" tabindex="0">Check out some Human Parts</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 
         <div id="gallery">
-            <p>Hover over the images to get the answer</p>
             <div class="container">
                 <div class="flipper">
                     <div class="front">
@@ -116,7 +134,7 @@
                     </div>
                     <div class="back">
                         <a href="https://en.wikipedia.org/wiki/Human_leg" target="_blank">
-                            <h2>Human Leg</h2>
+                            <h2 class="mh-100">Human Leg</h2>
                         </a>
                         <p class="description">The leg is the entire lower limb of the human body, including the foot, thigh or sometimes even the hip or buttock region. The major bones of the leg are the femur, tibia, and adjacent fibula. </p>
                     </div>
@@ -131,7 +149,7 @@
                     </div>
                     <div class="back">
                         <a href="https://en.wikipedia.org/wiki/Ear" target="_blank">
-                            <h2 class="">Human Ear</h2>
+                            <h2 class="mh-100">Human Ear</h2>
                         </a>
                         <p class="description">The ear is the organ of hearing and balance. It consists of a cavity in the skull structure lined with soft tissue, which encloses three distinctive spaces filled with air or liquid (external, middle and inner ear)</p>
                     </div>
@@ -147,7 +165,7 @@
                     </div>
                     <div class="back ">
                         <a href="https://en.wikipedia.org/wiki/Human_eye " target="_blank ">
-                            <h2>Human Eye</h2>
+                            <h2 class="mh-100">Human Eye</h2>
                         </a>
                         <p class="description">The human eye is a sensory organ in the visual system that reacts to visible light allowing eyesight. Other functions include maintaining the circadian rhythm, and keeping balance.</p>
                     </div>
@@ -157,31 +175,23 @@
 
             <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
-
-    <!---------------------------------- Begin the footer ------------->
-    <footer>
-        <span class="title d-block ">Example of a Footer Title</span>
-        <div class="container py-1 " id="footerTable ">
-            <ul class="list-unstyled d-flex justify-content-center ">
-                <li class="mx-3 ">
-                    <i class="fa-brands fa-facebook fa-3x " aria-hidden="true "></i>
-                </li>
-                <li class="mx-3 ">
-                    <i class="fa-brands fa-x-twitter fa-3x " aria-hidden="true "></i>
-                </li>
-                <li class="mx-3 ">
-                    <i class="fa-brands fa-instagram fa-3x " aria-hidden="true "></i>
-                </li>
-                <li class="mx-3 ">
-                    <i class="fa-brands fa-github fa-3x " aria-hidden="true "></i>
-                </li>
-                <li class="mx-3 ">
-                    <i class="fa-brands fa-tiktok fa-3x " aria-hidden="true "></i>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <!---------------------------------- End the footer ------------->
 </body>
+<!---------------------------------- Begin the footer ------------->
+<footer class="bg-body-tertiary text-center">
+
+    <!-- Grid container -->
+    <div class="text-center p-3 " style="background-color: rgb(252, 4, 4); ">
+        <div class="container p-4 ">
+            <div class="text-center p-3 " style="background-color: rgb(249, 5, 5); "></div>
+
+
+
+            <!-- Copyright -->
+            <div class="text-center p-3 " style="background-color: rgb(250, 1, 1); "></div>
+        </div>
+
+</footer>
+<!---------------------------------- End the footer ------------->
+
 
 </html>
