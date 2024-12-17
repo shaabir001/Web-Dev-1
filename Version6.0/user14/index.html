@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
 
     <!-- CSS -->
-
+    <link rel="stylesheet" href="CSS/style.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
     <!-- Font Awesome -->
@@ -34,30 +34,10 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        .demo-content {
-            padding: 15px;
-            font-size: 18px;
-            background: #dbdfe5;
-            margin-bottom: 15px;
-        }
-
-        .demo-content.bg-alt {
-            background: #abb1b8;
-        }
-
-        .table-striped>tbody>tr:nth-of-type(even)>* {
-            --bs-table-color-type: var(--bs-table-striped-color);
-            --bs-table-bg-type: rgba(0, 255, 255, 0.3)
-        }
-
-        .table-striped>tbody>tr:nth-of-type(odd)>* {
-            --bs-table-color-type: var(--bs-table-striped-color);
-            --bs-table-bg-type: rgba(200, 0, 0, 0.3)
-        }
-        
-        body{
+        body {
             background-color: black;
         }
+
         nav {
             background-color: black;
         }
@@ -67,16 +47,17 @@
     <!---------------------------------- Begin the nav-bar ----------------------------------->
     <nav class="navbar navbar-dark bg-dark">
         <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
-            data-target="#collapsingNavbar4">
+            data-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="collapsingNavbar4">
+        <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Home
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Gameplay</a>
                 </li>
             </ul>
         </div>
@@ -85,141 +66,25 @@
     <!--Introduction-->
     <header>
         <h1> Welcome to SH/FT </h1>
-
     </header>
-
     <main>
+        <div display="inline-block">
+            <p> SH/FT is a 2d traditional fighter developed by ANTITHOUGHT INTERACTIVE, featuring 12 characters that
+                each have unique and diverse playstyles! In SH/FT you'll be able to...
+                Fight with Friends or Online!
+                Experience a unique story with a lovably insane cast!
+                Bully Random People over the Internet!
+                Learn a Valuble lesson about forgiveness!
 
-        <!---------Three Column Layouts------------------------------------>
-        <div class="container mt-3">
-            <!--Row with six equal collums-->
-            <div class="row">
-                <div class="col-md-1 demo-content"> col-md-1</div>
-                <div class="col-md-1 demo-content bg-alt"> col-md-1</div>
-                <div class="col-md-1 demo-content"> col-md-1</div>
-                <div class="col-md-1 demo-content bg-alt"> col-md-1</div>
-                <div class="col-md-1 demo-content"> col-md-1</div>
-                <div class="col-md-1 demo-content bg-alt"> col-md-1</div>
-                <div class="col-md-1 demo-content"> col-md-1</div>
-                <div class="col-md-1 demo-content bg-alt"> col-md-1</div>
-                <div class="col-md-1 demo-content"> col-md-1</div>
-                <div class="col-md-1 demo-content bg-alt"> col-md-1</div>
-                <div class="col-md-1 demo-content"> col-md-1</div>
-                <div class="col-md-1 demo-content bg-alt"> col-md-1</div>
-
-            </div>
-
-            <!--Row with two columns divided in 1:2 ratio-->
-            <div class="row">
-                <div class="col-md-8 demo-content">.col-md-8</div>
-                <div class="col-md-4 demo-content bg-alt">.col-md-4</div>
-            </div>
-            <!--Row with two columns divided in 1:3 ratio-->
-            <div class="row">
-                <div class="col-md-4 demo-content">.col-md-4</div>
-                <div class="col-md-4 demo-content bg-alt">.col-md-4</div>
-                <div class="col-md-4 demo-content">.col-md-4</div>
-            </div>
-
-            <!---------Auto Layout Columns--------->
-            <!-- <div class="row">
-                <div class="col demo-content">Column one</div>
-                <div class="col demo-content bg-alt">Column two</div>
-                <div class="col demo-content">Column three</div>
-                <div class="col demo-content bg-alt">Column four</div>
-                <div class="col demo-content">Column five</div>
-                <div class="col demo-content bg-alt">Column six</div>
-            </div> -->
-
-            <!---------Flexible Layouts--------->
-            <!--<div class="row">
-                <div class="col-md-4 col-lg-3">
-                    <div class="demo-content">.col-md-4 .col-lg-3</div>
-                </div>
-                <div class="col-md-8 col-lg-6">
-                    <div class="demo-content bg-alt">.col-md-8 .col-lg-6</div>
-                </div>
-                <div class="col-md-12 col-lg-3">
-                    <div class="demo-content">.col-md-12 .col-lg-3</div>
-                </div>
-            </div> -->
-
-            <div class="row">
-                <div class="col demo-content">.col-md-6</div>
-                <div class="col demo-content bg-alt">.col-md-6</div>
-
-            </div>
+            </p>
         </div>
-
-        <!---------Table-Striped------------------------------------------->
-        <div class="container mt-3" name="table-striped">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Row</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Clark</td>
-                        <td>Kent</td>
-                        <td>clarkkent@mail.com</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>John</td>
-                        <td>Carter</td>
-                        <td>johncarter@mail.com</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Peter</td>
-                        <td>Parker</td>
-                        <td>peterparker@mail.com</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!---------List-Group---------------------------------------------->
-        <div class="container mt-3" name="list-group">
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active">
-                    <i class="fa fa-home"></i> Home
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-camera"></i> Pictures <span
-                        class="badge bg-secondary badge-pill badge-primary pull-right active">145</span>
-                </a>
-                <a href="https://www.spotify.com/" target="_blank" class="list-group-item list-group-item-action">
-                    <i class="fa fa-music"></i> Music <span
-                        class="badge bg-secondary badge-pill badge-primary pull-right active">50</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-film"></i> Videos <span
-                        class="badge bg-secondary badge-pill badge-primary pull-right">8</span>
-                </a>
-            </div>
-        </div>
-
-        <!---------Form Button--------------------------------------------->
-        <div class="container mt-3 vstack" name="form-button">
-            <a href="form.html" class="btn btn-success btn-lg" role="button" aria-pressed="true">Form Page</a>
-
-        </div>
-
-        <br>
     </main>
 
     <!---------------------------------- Begin the footer ------------------------------------->
-    <footer class="text-center bg-body-tertiary bg-alt" id="FooterSHIFT">
+    <footer id="FooterSHIFT">
         <span class="title" text-align="left">Social Medias:</span>
-        <div class="container py-4" id="footerTable">
-            <ul class="list-unstyled d-flex justify-content-left">
+        <div class="d-block" id="footerTable">
+            <ul class="list-unstyled justify-content-left">
                 <!-- Section: Social media -->
                 <section class="mb-4">
                     <!-- Facebook -->
@@ -254,9 +119,8 @@
                 <!-- Section: Social media -->
         </div>
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 Copyright:
-            <a class="text-body" href="#">ANTITHOUGHT INTERACTIVE</a>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05); color:#FF00E8">
+            © 2024 Copyright: ANTITHOUGHT INTERACTIVE
         </div>
         <!-- Copyright -->
     </footer>
