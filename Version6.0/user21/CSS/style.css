@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 body {
     background-color: black;
     background-image: url("/Version6.0/user21/images/dreamjolthostelrybg.jpg");
@@ -6,7 +8,7 @@ body {
 
   .navbar {
   background-color: rgb(64, 22, 22) !important;
-  color: white
+  color: white !important
   }
 
 a {
@@ -15,6 +17,7 @@ a {
 
  * {
     color: rgb(255, 255, 255);
+	font-family: "Quicksand", sans-serif;
   }
 
   .centerAlign {
@@ -27,7 +30,7 @@ a {
 
 .centerDiv {
 	position: absolute;
-	top: 350px;
+	top: 325px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -57,11 +60,11 @@ a {
 }
 
 footer {
-    position: absolute; bottom: 0;
+    position: relative; 
+	bottom: 0;
     width: 100%;
-    background-size: auto
+	display: block;
 }
 
-.container {
-    background-color: red
-}
+
+
