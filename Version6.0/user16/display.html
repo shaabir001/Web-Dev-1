@@ -32,6 +32,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
+    <!---Code for adding a Favicon-->
+    <link rel="icon" type="image/x-icon" href="https://iconifier.net/iconified/cf_6762dc30720d0_saw/apple-touch-icon-180x180.png" />
+    <!---Code for adding a Favicon-->
+
     <!-- Custom styles for this template -->
     <style type="text/css">
         footer {
@@ -84,6 +88,10 @@
             color: red;
             text-align: center;
         }
+        
+        h3 {
+            color: white
+        }
     </style>
 </head>
 
@@ -134,197 +142,253 @@
     <!---------------------------------- End the nav-bar ------------------------------------->
     <main class="container-fluid mt-3">
 
-        <h1 class="text-center my-3 title" tabindex="0">Flip to see ALL prices and ratings for Body Parts!</h1>
+        <h1 class="text-center my-3 title" tabindex="0">See ALL prices and ratings for Body Parts!</h1>
 
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPpMqpekFkKcJfjkSkCFPh2oluuV7RbVx6w&s" alt="Human Eye">
-                    <p class="caption">Body Part #1</p>
-                </div>
-                <div class="back">
-                    <h2 class="mh-100">Human Eye</h2>
-                    </a>
-                    <p class="description">
-                        <h2>$64,000</h2>
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+        <table class="shopping-cart">
+            <tbody>
+                <tr>
+                    <th style="width: 40px;">Product Name</th>
+                    <th style="width: 10%;">Image</th>
+                    <th style="width: 20px;">Rating</th>
+                    <th style="width: 20px;">Price</th>
+                    <th style="width: 20px;">Quantity</th>
+                </tr>
+                <tr>
+                    <td class="cross-symbol">
+                        <h3 class="text-center my-3 title" tabindex="0">Human Eye</h3>
+                    </td>
+                    <td class="image-cell">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPpMqpekFkKcJfjkSkCFPh2oluuV7RbVx6w&s">
+
+                    </td>
+                    <td><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>$64,000</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="minus">-</button><input type="text" class="number" value="1" min="1"><button class="plus">+</button>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
+                    </td>
+                </tr>
+            </tbody>
 
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <img src="https://www.zbrushcentral.com/uploads/default/optimized/3X/6/4/6431f0340e2db9765a6516b097bca68f2a031c5e_2_1200x1200.jpeg" alt="Human Arm">
-                    <p class="caption">Body Part #2</p>
-                </div>
-                <div class="back">
-                    <h2 class="mh-100">Human Arm</h2>
-                    </a>
-                    <p class="description">
-                        <h2>$124,800</h2>
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+            <tbody>
+                <tr>
+                    <th style="width: 40px;">Product Name</th>
+                    <th style="width: 10%;">Image</th>
+                    <th style="width: 20px;">Rating</th>
+                    <th style="width: 20px;">Price</th>
+                    <th style="width: 20px;">Quantity</th>
+                </tr>
+                <tr>
+                    <td class="cross-symbol">
+                        <h3 class="text-center my-3 title" tabindex="0">Human Arm</h3>
+                    </td>
+                    <td class="image-cell">
+                        <img src="https://www.zbrushcentral.com/uploads/default/optimized/3X/6/4/6431f0340e2db9765a6516b097bca68f2a031c5e_2_1200x1200.jpeg">
+
+                    </td>
+                    <td><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>$124,800</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="minus">-</button><input type="text" class="number" value="1" min="1"><button class="plus">+</button>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <img src="https://www.universalmedicalinc.com/media/catalog/product/cache/30001a70cc972b6c5336337d1270ded8/l/f/lf00671-main-1200wx1200h.jpg" alt="Human Leg">
-                    <p class="caption">Body Part #3</p>
-                </div>
-                <div class="back">
-                    <h2 class="mh-100">Human Leg</h2>
-                    </a>
-                    <p class="description">
-                        <h2>$115,200</h2>
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th style="width: 40px;">Product Name</th>
+                    <th style="width: 10%;">Image</th>
+                    <th style="width: 20px;">Rating</th>
+                    <th style="width: 20px;">Price</th>
+                    <th style="width: 20px;">Quantity</th>
+                </tr>
+                <tr>
+                    <td class="cross-symbol">
+                        <h3 class="text-center my-3 title" tabindex="0">Human Leg</h3>
+                    </td>
+                    <td class="image-cell">
+                        <img src="https://www.universalmedicalinc.com/media/catalog/product/cache/30001a70cc972b6c5336337d1270ded8/l/f/lf00671-main-1200wx1200h.jpg">
+
+                    </td>
+                    <td><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>$115,200</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="minus">-</button><input type="text" class="number" value="1" min="1"><button class="plus">+</button>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Thumb_up.JPG/1200px-Thumb_up.JPG" alt="Human Thumb">
-                    <p class="caption">Body Part #4</p>
-                </div>
-                <div class="back">
-                    <h2 class="mh-100">Human Thumb</h2>
-                    </a>
-                    <p class="description">
-                        <h2>$35,000</h2>
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th style="width: 40px;">Product Name</th>
+                    <th style="width: 10%;">Image</th>
+                    <th style="width: 20px;">Rating</th>
+                    <th style="width: 20px;">Price</th>
+                    <th style="width: 20px;">Quantity</th>
+                </tr>
+                <tr>
+                    <td class="cross-symbol">
+                        <h3 class="text-center my-3 title" tabindex="0">Human Thumb</h3>
+                    </td>
+                    <td class="image-cell">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Thumb_up.JPG/1200px-Thumb_up.JPG">
+
+                    </td>
+                    <td><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>$35,000</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="minus">-</button><input type="text" class="number" value="1" min="1"><button class="plus">+</button>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <img src="https://sfycdn.speedsize.com/d9acbe11-c0cc-4d19-a1ce-748a0fd38b05/www.miadonna.com/cdn/shop/products/Elysium-single-stone-mens-band-On-Hand-Lifestyle-003_1200x.jpg?v=1654725397" alt="Human Leg">
-                    <p class="caption">Body Part #5</p>
-                </div>
-                <div class="back">
-                    <h2 class="mh-100">Ring Finger</h2>
-                    </a>
-                    <p class="description">
-                        <h2>$6,000</h2>
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th style="width: 40px;">Product Name</th>
+                    <th style="width: 10%;">Image</th>
+                    <th style="width: 20px;">Rating</th>
+                    <th style="width: 20px;">Price</th>
+                    <th style="width: 20px;">Quantity</th>
+                </tr>
+                <tr>
+                    <td class="cross-symbol">
+                        <h3 class="text-center my-3 title" tabindex="0">Ring Finger</h3>
+                    </td>
+                    <td class="image-cell">
+                        <img src="https://sfycdn.speedsize.com/d9acbe11-c0cc-4d19-a1ce-748a0fd38b05/www.miadonna.com/cdn/shop/products/Elysium-single-stone-mens-band-On-Hand-Lifestyle-003_1200x.jpg?v=1654725397">
+
+                    </td>
+                    <td><span class="fa fa-star"></span>
+                    </td>
+                    <td>$6,000</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="minus">-</button><input type="text" class="number" value="1" min="1"><button class="plus">+</button>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <img src="https://i.etsystatic.com/iap/28ec8f/4142534118/iap_640x640.4142534118_9jzz1wr2.jpg?version=0" alt="Human Toe">
-                    <p class="caption">Body Part #6</p>
-                </div>
-                <div class="back">
-                    <h2 class="mh-100">Big Toe</h2>
-                    </a>
-                    <p class="description">
-                        <h2>$15,200</h2>
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th style="width: 40px;">Product Name</th>
+                    <th style="width: 10%;">Image</th>
+                    <th style="width: 20px;">Rating</th>
+                    <th style="width: 20px;">Price</th>
+                    <th style="width: 20px;">Quantity</th>
+                </tr>
+                <tr>
+                    <td class="cross-symbol">
+                        <h3 class="text-center my-3 title" tabindex="0">Big Toe</h3>
+                    </td>
+                    <td class="image-cell">
+                        <img src="https://i.etsystatic.com/iap/28ec8f/4142534118/iap_640x640.4142534118_9jzz1wr2.jpg?version=0">
+
+                    </td>
+                    <td><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>$15,200</td>
+                    <td>
+                        <div class="quantity">
+                            <button class="minus">-</button><input type="text" class="number" value="1" min="1"><button class="plus">+</button>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <img src="https://deltahub.io/cdn/shop/articles/cant-open-hand-all-the-way-find-out-what-could-be-wrong-121055.jpg?crop=center&height=1200&v=1698758365&width=1200" alt="Human Hand">
-                    <p class="caption">Body Part #7</p>
-                </div>
-                <div class="back">
-                    <h2 class="mh-100">Human Hand</h2>
-                    </a>
-                    <p class="description">
-                        <h2>$97,600</h2>
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th style="width: 40px;">Product Name</th>
+                    <th style="width: 10%;">Image</th>
+                    <th style="width: 20px;">Rating</th>
+                    <th style="width: 20px;">Price</th>
+                    <th style="width: 20px;">Quantity</th>
+                </tr>
+                <tr>
+                    <td class="cross-symbol">
+                        <h3 class="text-center my-3 title" tabindex="0">Human Hand</h3>
+                    </td>
+                    <td class="image-cell">
+                        <img src="https://deltahub.io/cdn/shop/articles/cant-open-hand-all-the-way-find-out-what-could-be-wrong-121055.jpg?crop=center&height=1200&v=1698758365&width=1200">
 
+                    </td>
+                    <td><span class=" fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span></td>
+                    <td>$97,600</td>
+                    <td>
+                        <div class="quantity ">
+                            <button class="minus ">-</button><input type="text " class="number " value="1 " min="1 "><button class="plus ">+</button>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <img src="https://shop.nascohealthcare.com/cdn/shop/products/WA22223-main_28b35ad9-f38c-4c07-b0ed-ba90cc936bc8.jpg?v=1582927915" alt="Human Foot">
-                    <p class="caption">Body Part #8</p>
-                </div>
-                <div class="back">
-                    <h2 class="mh-100">Human Foot</h2>
-                    </a>
-                    <p class="description">
-                        <h2>$82,000</h2>
-                        <div class="rating">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th style="width: 40px; ">Product Name</th>
+                    <th style="width: 10%; ">Image</th>
+                    <th style="width: 20px; ">Rating</th>
+                    <th style="width: 20px; ">Price</th>
+                    <th style="width: 20px; ">Quantity</th>
+                </tr>
+                <tr>
+                    <td class="cross-symbol ">
+                        <h3 class="text-center my-3 title" tabindex="0">Human Foot</h3>
+                    </td>
+                    <td class="image-cell ">
+                        <img src="https://shop.nascohealthcare.com/cdn/shop/products/WA22223-main_28b35ad9-f38c-4c07-b0ed-ba90cc936bc8.jpg?v=1582927915">
 
+                    </td>
+                    <td><span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span></td>
+                    <td>$82,000</td>
+                    <td>
+                        <div class="quantity ">
+                            <button class="minus ">-</button><input type="text " class="number " value="1 " min="1 "><button class="plus ">+</button>
                         </div>
-                    </p>
-                </div>
-            </div>
-        </div>
+                    </td>
+                </tr>
+            </tbody>
 
 
 
 
 
-        <!---------------------------------- Begin the footer ------------------------------------->
-        <style>
-            .footer {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: red;
-                color: white;
-                text-align: center;
-            }
-        </style>
+            <!---------------------------------- Begin the footer ------------------------------------->
+            <style>
+                .footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: red;
+                    color: white;
+                    text-align: center;
+                }
+            </style>
 
-        <div class="footer">
-            <p>
-                <!-- Facebook -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://static.wikia.nocookie.net/scp-db/images/1/13/SCP-096.jpg/revision/latest/thumbnail/width/360/height/360?cb=20210401173429" role="button" data-mdb-ripple-color="dark"><i class="fa-solid fa-face-sad-cry"></i
+            <div class="footer">
+                <p>
+                    <!-- Facebook -->
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://static.wikia.nocookie.net/scp-db/images/1/13/SCP-096.jpg/revision/latest/thumbnail/width/360/height/360?cb=20210401173429" role="button" data-mdb-ripple-color="dark"><i class="fa-solid fa-face-sad-cry"></i
         ></a>
 
         <!-- Twitter -->

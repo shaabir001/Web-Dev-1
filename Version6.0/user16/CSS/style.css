@@ -80,7 +80,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0px;
     font-family: "Marker Felt", "Comic Sans MS", fantasy;
-    color: #08f68f;
+    color: #f6e208;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -94,14 +94,14 @@ tr {
     background-color: #df09a2;
     border: 1px solid #000000;
     text-align: center;
-    background-color: #e80d0d;
+    background-color: #5c0c0c;
 }
 
 th {
     text-align: center;
     color: #e70f0f;
-    background-color: #e52f2f;
+    background-color: #400c0c;
     text-align: center;
     color: #ffffff;
-    background-color: #fc0202;
+    background-color: #660000;
 }
