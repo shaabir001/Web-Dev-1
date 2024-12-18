@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <Title>
         Technology Education at Shakopee High School</Title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- Homepage meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -38,11 +40,25 @@
             border: 2px;
             color: black;
         }
-        body {background-color: White;
+
+        body {
+            background-color: White;
         }
 
-      
-        
+        main {
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+
+        .savana {
+            background-color: rgb(160, 81, 45, .95);
+            Color: white
+        }
+
+        .savana:hover {
+            background-color: rgb(160, 81, 45);
+            opacity: 100%;
+        }
     </Style>
 
 </head>
@@ -63,8 +79,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Navbar brand -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
-                    <img src="https://i.etsystatic.com/10855810/r/il/4ac45f/4359122294/il_fullxfull.4359122294_bxj3.jpg" height="65"
-                        alt="Wood Logo" loading="lazy" />
+                    <img src="https://i.etsystatic.com/10855810/r/il/4ac45f/4359122294/il_fullxfull.4359122294_bxj3.jpg"
+                        height="65" alt="Wood Logo" loading="lazy" />
                 </a>
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -90,9 +106,9 @@
                 </a>
                 <!-- Avatar -->
                 <div class="dropdown">
-                    
-                    <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center hidden-arrow" href="AboutUs.html"
-                        id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
+
+                    <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                        href="AboutUs.html" id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
                         <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
                             alt="Black and White Portrait of a Man" loading="lazy" />
                     </a>
@@ -113,9 +129,34 @@
         </div>
         <!-- Container wrapper -->
     </nav>
+    <br>
+    <main>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active"
+                style="background-color: rgb(91, 91, 91);">
+                <i class="fa fa-home"></i> Home
+            </a>
+            <a href="https://images.google.com/" class="list-group-item list-group-item-action savana">
+                <i class="fa-solid fa-plus"></i> Coasters or Other Smalls <span
+                    class="badge bg-secondary badge-pill badge-primary pull-right active">$30-100</span>
+            </a>
+            <a href="https://www.spotify.com/" target="_blank" class="list-group-item list-group-item-action savana">
+                <i class="fa-solid fa-plus"></i> Custom Cutting Board <span
+                    class="badge bg-secondary badge-pill badge-primary pull-right active savana">$150-300</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action savana">
+                <i class="fa-solid fa-plus"></i> Side Table or Cabnit <span
+                    class="badge bg-secondary badge-pill badge-primary pull-right">$300-400</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action savana">
+                <i class="fa-solid fa-plus"></i> Dinning Table <span
+                    class="badge bg-secondary badge-pill badge-primary pull-right">$400-500</span>
+            </a>
+        </div>
 
 
 
+    </main>
 
 </Body>
 <br>
@@ -252,4 +293,5 @@
     </div>
     <!-- Copyright -->
 </footer>
+
 </html>
