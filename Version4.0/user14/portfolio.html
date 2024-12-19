@@ -40,9 +40,31 @@
             font-size: 12px;
             text-align: center;
         }
-        
+
         #rainbow {
             width: 100%;
+        }
+
+        td:hover {
+            background-color: black;
+        }
+
+        p {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        div:hover p {
+            display: block;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+ß
+        p+* {
+            background-color: #FFFF00;
         }
     </style>
 </head>
@@ -72,7 +94,8 @@
                         <a href="gallery.html" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled"
+                            tabindex="-1">Contact</a>
                     </li>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </ul>
@@ -110,9 +133,14 @@
         <p>
             These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
         </p>
-        <p>
-            I will use my knowledge to create an amazing website for you and your needs.
-        </p>
+
+        <div> Here's what I'll do with this ULTIMATE POWER!!!!! (Hover over me)
+            <p>
+                I will use my knowledge to create an amazing website for you and your needs.
+            </p>
+        </div>
+
+
         <div>
             <table id="rainbow">
                 <tr>
@@ -133,6 +161,13 @@
                 </tr>
             </table>
         </div>
+
+        <div> Here's another thing I learned! Please, enter your half-brother's grandfather's dog's age in the box
+            below.
+            <input type="text" name="age"> <br>
+            Bet you didn't expect that, did'ya?
+        </div>
+
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 

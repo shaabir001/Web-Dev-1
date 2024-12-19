@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -130,17 +132,12 @@ h6 {
  #knowledge > * {
 	border: 3px red solid;
   }
-  p + * {
-	background-color: #FFFF00;
-  }
-  
   div li::marker{
 	color: red;
   }
   #knowledge li::marker{
 	content:"😜 ";
   }
-  @import url(rainbow.css);
    div li:hover {
 	background-color: black;
   }
