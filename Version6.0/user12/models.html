@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Version 6.0
+    Name:shabir sadeqi
+    Date Completed:12/9/24
+-->
 
 <head>
-    <link rel="icon" type="image/ico" href="./images/logo.PNG" <meta charset="UTF-8">
+    <link rel="icon" type="image/ico" href="./images/logo.jpg">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bugatti Models</title>
@@ -10,27 +15,37 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        /* Custom styles */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
         }
 
-        /* Navbar Styling */
         .navbar {
-            background-color: #000;
+            background-color: #212121;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .navbar .navbar-brand {
-            font-weight: bold;
-            color: #ffcc00 !important;
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #f1c40f;
         }
 
         .navbar-nav .nav-link {
+            color: #fff;
             font-size: 1.1rem;
+            padding: 12px 20px;
+            text-transform: uppercase;
+            font-weight: 600;
         }
 
-        /* Models Section Styling */
+        .navbar-nav .nav-link:hover {
+            color: #f1c40f;
+            background-color: #333;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
         .models-details {
             background: url('images/bugatti-bg.jpg') no-repeat center center;
             background-size: cover;
@@ -46,9 +61,6 @@
             margin-bottom: 30px;
         }
 
-        .models-details .row {
-            margin-top: 50px;
-        }
 
         .model-card {
             background-color: rgba(0, 0, 0, 0.7);
@@ -65,6 +77,9 @@
 
         .model-card img {
             border-radius: 10px;
+            max-height: 220px;
+            object-fit: cover;
+            width: 100%;
         }
 
         .model-card h3 {
@@ -89,7 +104,52 @@
             padding-bottom: 5px;
         }
 
-        /* Footer Styling */
+        .model-card .badge {
+            font-size: 1.1rem;
+            background-color: #ffcc00;
+            color: #222;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .table {
+            background-color: #222;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+        }
+
+        .table th,
+        .table td {
+            padding: 15px 20px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.1rem;
+            border: 1px solid #444;
+        }
+
+        .table th {
+            background-color: #ffcc00;
+            color: #222;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .table td {
+            background-color: #333;
+            color: #dcdcdc;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #444;
+        }
+
+        .table tbody tr:hover {
+            background-color: #555;
+            cursor: pointer;
+        }
+
         footer {
             background-color: #000;
             color: white;
@@ -111,7 +171,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Bugatti</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -138,6 +198,7 @@
                 <!-- Bugatti Veyron -->
                 <div class="col-md-4 mb-4">
                     <div class="model-card">
+                        <span class="badge">2015 Model</span>
                         <img src="images/veyron.jpg" class="img-fluid rounded-3" alt="Bugatti Veyron">
                         <h3 class="mt-3">Bugatti Veyron</h3>
                         <p>The Veyron represents the pinnacle of automotive engineering. With its quad-turbo W16 engine,
@@ -148,15 +209,13 @@
                             <li><strong>0-60 mph:</strong> 2.5 seconds</li>
                             <li><strong>Engine:</strong> 8.0L Quad-Turbocharged W16</li>
                         </ul>
-                        <p><strong>Features:</strong> Full leather interior, advanced aerodynamics, carbon fiber body,
-                            and a computer-controlled active suspension system. The Veyron redefined performance with
-                            unmatched precision engineering.</p>
                     </div>
                 </div>
 
                 <!-- Bugatti Chiron -->
                 <div class="col-md-4 mb-4">
                     <div class="model-card">
+                        <span class="badge">2017 Model</span>
                         <img src="images/chiron.jpg" class="img-fluid rounded-3" alt="Bugatti Chiron">
                         <h3 class="mt-3">Bugatti Chiron</h3>
                         <p>The Chiron is an engineering marvel that pushes the boundaries of what’s possible in
@@ -168,15 +227,13 @@
                             <li><strong>0-60 mph:</strong> 2.5 seconds</li>
                             <li><strong>Engine:</strong> 8.0L Quad-Turbocharged W16</li>
                         </ul>
-                        <p><strong>Features:</strong> The Chiron boasts active aerodynamics, an advanced four-wheel
-                            drive system, and a seven-speed dual-clutch transmission. Interior features include the
-                            finest leather, customizable displays, and an exceptional audio system.</p>
                     </div>
                 </div>
 
                 <!-- Bugatti Divo -->
                 <div class="col-md-4 mb-4">
                     <div class="model-card">
+                        <span class="badge">2018 Model</span>
                         <img src="images/divo.jpg" class="img-fluid rounded-3" alt="Bugatti Divo">
                         <h3 class="mt-3">Bugatti Divo</h3>
                         <p>The Divo is a more track-focused version of the Chiron, built for precision and agility,
@@ -187,12 +244,50 @@
                             <li><strong>0-60 mph:</strong> 2.4 seconds</li>
                             <li><strong>Engine:</strong> 8.0L Quad-Turbocharged W16</li>
                         </ul>
-                        <p><strong>Features:</strong> With enhanced aerodynamics and lightweight design, the Divo is
-                            engineered to be incredibly agile and responsive on the track. It features a bespoke
-                            interior with top-quality materials and advanced tech.</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications Table -->
+    <section>
+        <div class="container">
+            <h2 class="text-center mb-4">Technical Specifications</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Top Speed</th>
+                        <th>Horsepower</th>
+                        <th>0-60 mph</th>
+                        <th>Engine</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Veyron</td>
+                        <td>267 mph</td>
+                        <td>1,001 hp</td>
+                        <td>2.5 seconds</td>
+                        <td>8.0L Quad-Turbocharged W16</td>
+                    </tr>
+                    <tr>
+                        <td>Chiron</td>
+                        <td>261 mph</td>
+                        <td>1,479 hp</td>
+                        <td>2.5 seconds</td>
+                        <td>8.0L Quad-Turbocharged W16</td>
+                    </tr>
+                    <tr>
+                        <td>Divo</td>
+                        <td>236 mph</td>
+                        <td>1,479 hp</td>
+                        <td>2.4 seconds</td>
+                        <td>8.0L Quad-Turbocharged W16</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
@@ -206,8 +301,6 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
