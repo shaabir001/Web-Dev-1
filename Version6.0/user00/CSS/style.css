@@ -1,6 +1,7 @@
 body {
     background-color: gray;
     background-image: url("https://hips.hearstapps.com/hmg-prod/images/rustic-weathered-wood-logs-royalty-free-image-1654709658.jpg");
+    position: relative;
 }
 
 
@@ -50,6 +51,7 @@ height: calc(100% - 54px); /*Minus the height of the header*/
 top: 54px; /*The height of the header*/
 background-size: cover;
 background-attachment: fixed;
+
 }
 
 i>li:hover {
