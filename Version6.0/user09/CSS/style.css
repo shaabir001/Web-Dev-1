@@ -55,7 +55,8 @@ button {
 	background-color:#f763b063;
 }
 
-.music-list {
+.top-list {
+    color:#1c1b1b;
     text-align: center;
 }
 
@@ -64,7 +65,8 @@ button {
 }
 
 body{
-    background-color: #343737;
+    color:#1c1b1b;
+    background-color: #eaf1f1;
 }
 
 footer {
@@ -81,7 +83,7 @@ footer {
 }
 
 ul {
-    color:#d1d1d1;
+    color:#7c0808;
 }
 
 select {
@@ -97,4 +99,49 @@ select {
 
 nav {
     position:relative;
+
+    background-color:#c21d2a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: #bf1818;
+    text-align: center;
+    -webkit-filter: brightness(97%); 
+}
+
+.card:hover {
+    background-color: #bf1818;
+    text-align: center;
+    -webkit-filter: brightness(108%); 
+}
+
+.collapse :hover {
+    color:#ffffff;
+}
+
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-stretch: ultra-expanded;
+}
+
+strong {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-stretch: ultra-expanded;
+}
+
+.nameplate {
+    background: linear-gradient(
+        180deg,
+        rgb(203, 45, 45),
+        rgb(148, 24, 24)
+        );
+        padding: 0.25rem 0rem;
 }
