@@ -1,16 +1,20 @@
 
   .flip-card-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 10px;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 0 10px;
   }
   
   .flip-card {
     background-color: transparent;
-    width: 150px;
-    height: 200px;
+    flex: 1;
+    width: 279.8593px;
+    height: 375px;
     perspective: 1000px;
+    display: inline-block;
   }
   
   .flip-card-inner {
@@ -69,8 +73,6 @@
   }  
   
   .flip-card-back {
-    background: #ff6f61;
-    color: white;
+    background: #828282;
     transform: rotateY(180deg);
   }
-  
