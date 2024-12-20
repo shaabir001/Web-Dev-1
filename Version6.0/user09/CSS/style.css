@@ -60,10 +60,6 @@ button {
     text-align: center;
 }
 
-*{
-    color:rgb(235, 245, 251);
-}
-
 body{
     color:#1c1b1b;
     background-color: #eaf1f1;
@@ -111,12 +107,14 @@ a {
     background-color: #bf1818;
     text-align: center;
     -webkit-filter: brightness(97%); 
+    margin: 19px;
 }
 
 .card:hover {
     background-color: #bf1818;
     text-align: center;
     -webkit-filter: brightness(108%); 
+    transform: scale(100.75%);
 }
 
 .collapse :hover {
@@ -130,6 +128,8 @@ a {
 h2 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-stretch: ultra-expanded;
+
+    text-align: center;
 }
 
 strong {
@@ -144,4 +144,43 @@ strong {
         rgb(148, 24, 24)
         );
         padding: 0.25rem 0rem;
+}
+
+video {
+    align-items: left;
+
+    transform: translate(63rem);
+}
+
+.news-video {
+
+    transform: translate(-24rem);
+}
+
+table {
+    color:#1c1b1b;
+}
+
+tr {
+    color:#1c1b1b;
+}
+
+td {
+    color:#1c1b1b;
+}
+
+.information {
+    color: #1c1b1b;
+}
+
+.card {
+    color: #eaf1f1;
+}
+
+.navbar-brand {
+    color:#dde2e2;
+}
+
+h3 {
+    transform: translate(40rem);
 }
