@@ -29,13 +29,37 @@
 	color: #ffc1bf
 }
 
+
+p:nth-child(2) {
+    margin-left: 2%;
+    margin-right: 40%;
+}
+
+h1 {
+    padding-top: 1%;
+    margin-left:2%
+}
+
+
+ul:nth-child(4) > li:nth-child(1) {
+	margin-left: 2%;
+    margin-bottom: 1%
+}
+
+ul:nth-child(4) > li:nth-child(2) {
+	margin-left: 2%;
+    margin-bottom: 1%
+}
+
+ul:nth-child(4) > li:nth-child(3) {
+	margin-left: 2%;
+    margin-bottom: 1%
+}
+
 footer {
 position: absolute !important
 }
 
-h4{
-    padding:1%
-}
 
 
     </style>
@@ -60,7 +84,7 @@ h4{
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
         <!-- Container wrapper -->
-        <div class="connie-fluid">
+        <div class="container-fluid">
             <!-- Toggle button -->
             <button data-mdb-collapse-init class="navbar-toggler" type="button"
                 data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -97,16 +121,36 @@ h4{
             </div>
         </div>
     </nav>
-<main>
-    <div class="centerAlign centerDiv">
-        <h1>Dreamjolt Hostelry</h1>
-        <h4>A bar of nonalcoholic drinks and sweet dreams.</h4>
-        <a href="whoopsies.html" class="bigGreenButton">Book a Reservation</a>
-    </div>
-</main>
+
+    <main class="container-fluid mt-3">
+
+        <ins><h1 class="text-left my-3">About us - </h1></ins>
+        <p>We are a small bar in the Dreamscape of Penacony. We believe that the most important part of being a drinksmith is <ins>making connections with our customers.</ins>
+             So sit down, have a drink, and set aside your differences and talk with people from many unique corners of the world.</p>
+
+        <ins><h1 class="text-left my-3">Contact us at the Following - </h1></ins>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <ul>
+            <li> <i class="fa-solid fa-mobile-screen-button"></i>
+                619-285-0394</li>
+            <li> <i class="fa-solid fa-envelope"></i>
+                DreamjoltHostelry@gmail.com</li>
+            <li> <i class="fa-solid fa-house"></i>
+            262 Dreamjolt Street, Golden Hour, PY</li>
+
+        </ul>
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+
 
 </body>
 <br>
+
 <!-- Footer -->
 <footer class="bg-body-tertiary text-center">
     <!-- Grid container -->
