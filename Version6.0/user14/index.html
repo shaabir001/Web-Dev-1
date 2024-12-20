@@ -41,53 +41,69 @@
         nav {
             background-color: black;
         }
+
+        li {
+            display: inline;
+        }
+
     </style>
+</head>
 
 <body>
     <!---------------------------------- Begin the nav-bar ----------------------------------->
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
-            data-target="collapsable-navbar">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">SH/FT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsable-navbar">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gameplay</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gameplay.html">Gameplay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Art.html">Art</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Navbar text with an inline element
+          </span>
         </div>
-
-    </nav>
+      </nav>
     <!---------------------------------- End the nav-bar ------------------------------------->
     <!--Introduction-->
     <header>
         <h1> Welcome to SH/FT </h1>
+        <p> SH/FT is a 2d traditional fighter developed by ANTITHOUGHT INTERACTIVE, featuring 12 characters that
+            each have unique and diverse playstyles! In SH/FT you'll be able to...</p>
     </header>
+
+
     <main class="container-fluid mt-3">
-        <div display="inline-block">
-            <p> SH/FT is a 2d traditional fighter developed by ANTITHOUGHT INTERACTIVE, featuring 12 characters that
-                each have unique and diverse playstyles! In SH/FT you'll be able to...</p>
-        </div>
-        
-        <div class="container">
-            <div class="flipper">
-                <div class="front">
-                    <h2>Battle with friends or online!</h2>
-                </div>
-                <div class="back">
-                    <p>omputer memory that can be read and changed in any order, typically used to store working data and machine code</p>
-                </div>
-        </div>
-        
-        
+
+        <article class="container-fluid">
+
+            <div class="container">
+                <h2>Battle with friends or online!</h2>
+            </div>
+
+            <div class="container">
+                <h2>Enjoy a wacky cast!</h2>
+            </div>
+
+            <div class="container">
+                <h2>Bully random people over the internet!</h2>
+            </div>
+
+            <div class="container">
+                <h2>Engage with a unique story that is very cool :]</h2>
+            </div>
 
 
-
+        </article>
     </main>
 
     <!---------------------------------- Begin the footer ------------------------------------->

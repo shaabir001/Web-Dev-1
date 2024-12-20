@@ -49,7 +49,7 @@ h4,
 h5,
 h6 {
     text-align: center;
-    color: #FF00E8;
+    color: whitesmoke;
     text-decoration: wavy;
 }
 
@@ -80,59 +80,32 @@ span {
     background-color: black;
 }
 
-*{
-    color: #FF00E8;
-    text-rendering: auto;
-}
+
 
 .container{
-    background-color: black;
+    background-color: red;
     padding: 20px;
     color-scheme: normal;
+    border-color:#FF00E8;
+    border-width: 2dvh;
     stroke: #FF00E8;
+    stroke-width: 2dvh;
     display: inline-block;
     margin: 3%;
     perspective: 1000px;
-    transform: skewX(30deg);
+    transform: skewX(-30deg);
 }
 
 
-.container:hover .flipper {
-    transform: rotateY(540deg);
+.container:hover {
+    box-shadow: #FF00E8;
 }
 
-.flipper {
-    position: relative;
-    transition: 0.6s;
-    transform-style: preserve-3d;
+.container>* {
+    transform: SkewX(30deg);
 }
 
-.front,
-.back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 320px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    backface-visibility: hidden;
-}
-
-.front {
-    z-index: 2;
-}
-
-.back {
-    transform: rotateY(180deg);
-}
-
-.container,
-.front,
-.back {
-    width: 250px;
-    height: 320px;
-}
-
-.front>*,.back>* {
-    transform: SkewX(-30deg);
+.nav-item, .nav-item-active {
+    display:inline-block;
+    margin: 0 20px;
 }
