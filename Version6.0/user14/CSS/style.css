@@ -1,3 +1,4 @@
+@import url(login.css);
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -89,8 +90,6 @@ span {
     border-color:#FF00E8;
     border-width: 2%, 4%, 4%, 2%;
     border-style: groove;
-    stroke: #FF00E8;
-    stroke-width: 2dvh;
     display: inline-block;
     margin: 5cm;
     perspective: 1000px;
@@ -99,14 +98,14 @@ span {
 
 
 .container:hover {
-    text-shadow: #FF00E8, 2px;
+    text-shadow: #FF00E8;
 }
 
 .container>* {
     transform: SkewX(30deg);
 }
 
-.nav-item, .nav-item-active {
+.nav-item, .nav-item-active, span.navbar-text {
     display:inline-block;
     margin: 0 20px;
 }
