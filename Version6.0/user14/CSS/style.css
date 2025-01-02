@@ -48,11 +48,13 @@ h5,
 h6 {
     text-align: center;
     color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: wavy;
 }
 
 p {
     color: #FF00E8;
+    font-family: Arial, Helvetica, sans-serif;
     text-rendering: auto;
 }
 
@@ -74,8 +76,10 @@ span {
     width: max-content;
     height: auto;
 }
-#FooterSHIFT {
+
+#FooterSHIFT>* {
     background-color: black;
+    justify-content: center;
 }
 
 
@@ -87,16 +91,21 @@ span {
     border-color:#FF00E8;
     border-width: 2%, 4%, 4%, 2%;
     border-style: groove;
-    display: inline-block;
+    display: block;
     margin: 5cm;
-    perspective: 1000px;
     transform: skewX(-30deg);
 }
 
 
 .container:hover {
-    text-shadow: #FF00E8;
+    box-shadow: #9c0790 -5px 10px;
+    animation: fade 3s infinite alternate;
 }
+
+@keyframes fade {
+    from {box-shadow: #9c0790 -5px 10px;}
+    to {box-shadow: #2e122c -5px 10px;}
+  }
 
 .container>* {
     transform: SkewX(30deg);

@@ -52,11 +52,16 @@
         }
 
         .container {
-            margin-left: 5cm;
+            margin-left: 7cm;
+            align-self: start;
         }
 
         header>p {
             text-align: center;
+        }
+        
+        img {
+            padding: auto;
         }
     </style>
 
@@ -94,28 +99,35 @@
     </nav>
     <!---------------------------------- End the nav-bar ------------------------------------->
     <!--Introduction-->
-    <header>
+    <header class="container mt-3 mb-2">
         <h1>SH/FT's concept art</h1>
         <p>These are some of the many images that have either been created by us outright, or been huge inspirations to our designs!</p>
     </header>
-    <main>
-        <!--PUT alll the pics here dum dum-->
-        <img height="500" width="auto" src="images/Avatar of Wrath.png">
-        <img height="500" width="auto" src="images/Belka OG Ref.png">
-        <img height="500" width="auto" src="images/new_ideas.webp">
-        <img height="500" width="auto" src="images/Danté Sword Concept.png">
-        <img height="500" width="auto" src="images/Avatar2.webp">
-        <img height="500" width="auto" src="images/Avatar3.webp">
-        <img height="500" width="auto" src="images/soov1.webp">
-        <img height="500" width="auto" src="images/soov2.webp">
-        <img height="500" width="auto" src="images/Belka IV concept.webp">
+    
+    <main class="container-fluid mt-3">
+            <!--PUT alll the pics here dum dum-->
+            <div class="row m-auto">
+
+                <div class="col-xs-12 w-auto">
+                    <img height="500" width="auto" src="images/Avatar of Wrath.png">
+                    <img height="500" width="auto" src="images/Belka OG Ref.png">
+                    <img height="500" width="auto" src="images/new_ideas.webp">
+                    <img height="500" width="auto" src="images/Danté Sword Concept.png">
+                    <img height="500" width="auto" src="images/Avatar2.webp">
+                    <img height="500" width="auto" src="images/Avatar3.webp">
+                    <img height="500" width="auto" src="images/soov1.webp">
+                    <img height="500" width="auto" src="images/soov2.webp">
+                    <img height="500" width="auto" src="images/Belka IV concept.webp">
+                </div>
+
+              </div>
     </main>
 
     <!---------------------------------- Begin the footer ------------------------------------->
     <footer id="FooterSHIFT">
-        <span class="title" text-align="left">Social Medias:</span>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05); color:#FF00E8">Social Medias:</div>
         <div class="d-block" id="footerTable">
-            <ul class="list-unstyled justify-content-left">
+            <ul class="list-unstyled justify-content-middle">
                 <!-- Section: Social media -->
                 <section class="mb-4">
                     <!-- Facebook -->
