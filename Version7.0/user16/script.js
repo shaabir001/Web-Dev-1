@@ -20,12 +20,12 @@ window.onload = () => {
     });
 };
 // Player X selection
-selectBtnX.onclick = () => {
+selectBtnO.onclick = () => {
     selectBox.classList.add("hide");
     playBoard.classList.add("show");
 };
 // Player O selection
-selectBtnO.onclick = () => {
+selectBtnX.onclick = () => {
     selectBox.classList.add("hide");
     playBoard.classList.add("show");
     players.classList.add("active", "player");
