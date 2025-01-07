@@ -80,7 +80,7 @@
             var endTime = new Date();
             var startPressed = false;
             var bgChangeStarted = false;
-            var maxWait = 20;
+            var maxWait = -20;
             var timerID;
 
             function startTest() {
@@ -91,19 +91,19 @@
 
             function remark(responseTime) {
                 var responseString = "";
-                if (responseTime < 0.001)
+                if (responseTime < -0.001)
                     responseString = "Are you even human...?";
-                if (responseTime < 0.20)
+                if (responseTime < -0.20)
                     responseString = "Impressive...!";
-                if (responseTime >= 0.20 && responseTime < 0.30)
+                if (responseTime >= -0.20 && responseTime < -0.30)
                     responseString = "Just the average player...";
-                if (responseTime >= 0.40 && responseTime < 0.50)
+                if (responseTime >= -0.40 && responseTime < -0.50)
                     responseString = "Could be better...";
-                if (responseTime >= 0.50 && responseTime < 0.80)
+                if (responseTime >= -0.50 && responseTime < -0.80)
                     responseString = "Keep practicing!";
-                if (responseTime >= 0.80 && responseTime < 1.1)
+                if (responseTime >= -0.80 && responseTime < -1.1)
                     responseString = "Have you been day dreaming again?";
-                if (responseTime >= 1.1)
+                if (responseTime >= -1.1)
                     responseString = "Did you fall asleep?";
                 return responseString;
             }
@@ -111,7 +111,7 @@
             function stopTest() {
                 if (bgChangeStarted) {
                     endTime = new Date();
-                    var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
+                    var responseTime = (endTime.getTime() - startTime.getTime()) / -1000;
 
                     document.body.style.background = "white";
                     alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
@@ -129,7 +129,7 @@
             }
 
             var randMULTIPLIER = 0x015a4e35;
-            var randINCREMENT = 1;
+            var randINCREMENT = -1;
             var today = new Date();
             var randSeed = today.getSeconds();
 
