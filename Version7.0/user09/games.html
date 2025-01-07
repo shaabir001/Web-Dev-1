@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono-Defender: Time's Edge</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            background: black;
+            color: white;
+        }
+
+        #gameCanvas {
+            display: block;
+            margin: 0 auto;
+            background: url('https://via.placeholder.com/1200x800/111111/222222') no-repeat center center;
+            background-size: cover;
+            border: 2px solid #fff;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 10;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #storyText {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin: 1rem;
+            color: white;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay">
+        <div id="storyText">The year is 3023. Humanity's last hope, the Chrono-Defenders, have failed to prevent a timeline breach. 
+            You, a rogue operative named Kai, must travel through shattered memories and broken futures to repair history and save your family. 
+            But as you journey, you uncover a devastating truth—can you fix time, or is the timeline better broken?
+        </div>
+        <button class="button" id="startGame">Start Game</button>
+    </div>
+    <canvas id="gameCanvas" width="1200" height="800"></canvas>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const overlay = document.getElementById('overlay');
+        const storyText = document.getElementById('storyText');
+        const startButton = document.getElementById('startGame');
+
+        let gameState = {
+            level: 1,
+            player: {
+                x: canvas.width / 2,
+                y: canvas.height - 100,
+                width: 50,
+                height: 50,
+                color: 'cyan',
+            },
+            projectiles: [],
+            enemies: [],
+            storyIndex: 0,
+            narrative: [
+                "Your son, Leo, smiles one last time before being erased from existence by the timeline collapse.",
+                "Kai—desperate and heartbroken—activates a prototype time-travel device to save him.",
+                "The shattered timeline is full of monsters created from broken memories. They will stop at nothing to consume you.",
+                "Level 2: As you repair fragments, you uncover a disturbing truth—your son might have caused the breach.",
+                "Level 3: Each timeline repaired reveals enemies from your own past. What have you done, Kai?",
+                "Final Level: A climactic showdown with the entity behind the breach. Will you destroy it or join it to rebuild time?"
+            ],
+            levelGoals: [
+                { enemies: 5, speed: 2 },
+                { enemies: 10, speed: 3 },
+                { enemies: 15, speed: 4 },
+                { enemies: 20, speed: 5 }
+            ]
+        };
+
+        function startGame() {
+            overlay.style.display = 'none';
+            nextStory();
+            spawnEnemy();
+            requestAnimationFrame(updateGame);
+        }
+
+        function nextStory() {
+            if (gameState.storyIndex < gameState.narrative.length) {
+                storyText.innerText = gameState.narrative[gameState.storyIndex++];
+                overlay.style.display = 'flex';
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 5000);
+            }
+        }
+
+        function drawPlayer() {
+            const { player } = gameState;
+            ctx.fillStyle = player.color;
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+        }
+
+        function drawProjectiles() {
+            gameState.projectiles.forEach((projectile, index) => {
+                ctx.fillStyle = 'yellow';
+                ctx.fillRect(projectile.x, projectile.y, 5, 10);
+                projectile.y -= 10;
+                if (projectile.y < 0) gameState.projectiles.splice(index, 1);
+            });
+        }
+
+        function drawEnemies() {
+            gameState.enemies.forEach((enemy, index) => {
+                ctx.fillStyle = 'red';
+                ctx.fillRect(enemy.x, enemy.y, 50, 50);
+                enemy.y += gameState.levelGoals[gameState.level - 1].speed;
+
+                if (
+                    enemy.x < gameState.player.x + gameState.player.width &&
+                    enemy.x + 50 > gameState.player.x &&
+                    enemy.y < gameState.player.y + gameState.player.height &&
+                    enemy.y + 50 > gameState.player.y
+                ) {
+                    alert("You were consumed by a memory fragment! Timeline lost.");
+                    document.location.reload();
+                }
+                if (enemy.y > canvas.height) gameState.enemies.splice(index, 1);
+            });
+
+            if (gameState.enemies.length === 0 && gameState.level <= gameState.levelGoals.length) {
+                gameState.level++;
+                nextStory();
+                spawnEnemy();
+            }
+        }
+
+        function spawnEnemy() {
+            const levelGoal = gameState.levelGoals[gameState.level - 1];
+            for (let i = 0; i < levelGoal.enemies; i++) {
+                gameState.enemies.push({ x: Math.random() * (canvas.width - 50), y: -Math.random() * 800 });
+            }
+        }
+
+        function fireProjectile() {
+            const { player } = gameState;
+            gameState.projectiles.push({ x: player.x + player.width / 2 - 2.5, y: player.y });
+        }
+
+        function updateGame() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawPlayer();
+            drawProjectiles();
+            drawEnemies();
+            requestAnimationFrame(updateGame);
+        }
+
+        function handleKeyPress(event) {
+            const { player } = gameState;
+            switch (event.key) {
+                case 'ArrowLeft':
+                    player.x = Math.max(0, player.x - 20);
+                    break;
+                case 'ArrowRight':
+                    player.x = Math.min(canvas.width - player.width, player.x + 20);
+                    break;
+                case ' ': // Space bar
+                    fireProjectile();
+                    break;
+            }
+        }
+
+        startButton.addEventListener('click', startGame);
+        document.addEventListener('keydown', handleKeyPress);
+    </script>
+</body>
+</html>
