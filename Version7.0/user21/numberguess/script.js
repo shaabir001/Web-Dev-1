@@ -10,7 +10,7 @@ input.focus();
 // Function to reset the game
 const resetGame = () => {
   randomNum = Math.floor(Math.random() * 500); // Generate a new random number
-  chance = 14; // Reset chances
+  chance = 12; // Reset chances
   input.disabled = false; // Enable input field
   remainChances.textContent = chance; // Update chances display
   guess.textContent = ""; // Clear guess display
@@ -21,7 +21,7 @@ const resetGame = () => {
 
 // Generate a random number between 0 and 99
 let randomNum = Math.floor(Math.random() * 500);
-let chance = 10;
+let chance = 12;
 
 // Add click event listener to the check button
 checkButton.addEventListener("click", () => {
