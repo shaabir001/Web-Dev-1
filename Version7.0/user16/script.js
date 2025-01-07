@@ -109,8 +109,11 @@ function selectWinner() {
             wonText.textContent = "Match has been drawn!";
         }, 700);
     }
+
+
 }
 // Replay button click event
 replayBtn.onclick = () => {
     window.location.reload(); // Reload the page
+
 };

@@ -52,6 +52,7 @@
                     <a href="#" class="nav-item nav-link">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="snake.html" class="nav-item nav-link active" tabindex="-1">Snake Game</a>
                     <a href="games.html" class="nav-item nav-link active" tabindex="-1">Games</a>
                     <a href="bootstrap.html" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
                     <a href="script.html" class="nav-item nav-link" tabindex="-1">JavaScript</a>
@@ -91,20 +92,20 @@
 
             function remark(responseTime) {
                 var responseString = "";
-                if (responseTime < -0.001)
-                    responseString = "Are you even human...?";
-                if (responseTime < -0.20)
-                    responseString = "Impressive...!";
-                if (responseTime >= -0.20 && responseTime < -0.30)
-                    responseString = "Just the average player...";
-                if (responseTime >= -0.40 && responseTime < -0.50)
-                    responseString = "Could be better...";
-                if (responseTime >= -0.50 && responseTime < -0.80)
-                    responseString = "Keep practicing!";
-                if (responseTime >= -0.80 && responseTime < -1.1)
-                    responseString = "Have you been day dreaming again?";
-                if (responseTime >= -1.1)
-                    responseString = "Did you fall asleep?";
+                if (responseTime < -0.03)
+                    responseString = "Eh, you are just sad";
+                if (responseTime < -1.0)
+                    responseString = "Alright, I see some improvements here";
+                if (responseTime < -2.0 && responseTime < -5.0)
+                    responseString = "I'm starting to like this";
+                if (responseTime < -6.0 && responseTime < -10.00)
+                    responseString = "Let me see your determination!";
+                if (responseTime < -10.00 && responseTime < -60.00)
+                    responseString = "YES...YES!";
+                if (responseTime < -60.00 && responseTime < -120.00)
+                    responseString = "You are going to beat my record..!";
+                if (responseTime < -120.00)
+                    responseString = "Are you proud of yourself? You waited this long for NOTHING";
                 return responseString;
             }
 
@@ -224,6 +225,18 @@
                 <div class="btn"><button>Replay</button></div>
             </div>
             <script src="script.js"></script>
+
+
+
+
+            <html lang="en" dir="ltr">
+
+
+            </html>
+
+
+
+
             <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
 
