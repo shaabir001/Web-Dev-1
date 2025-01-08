@@ -182,13 +182,13 @@
 
 
             <h1>Guess the Number!</h1>
-            <p>I'm thinking of a number between 1 and 100.</p>
+            <p>I'm thinking of a number between 1 and 1000000.</p>
             <input type="number" id="guessInput">
             <button onclick="checkGuess()">Guess</button>
             <p id="result"></p>
         
             <script>
-                let randomNumber = Math.floor(Math.random() * 100) + 1;
+                let randomNumber = Math.floor(Math.random() * 1000000) + 1;
                 let guesses = 0;
         
                 function checkGuess() {
