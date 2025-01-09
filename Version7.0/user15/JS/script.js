@@ -15,7 +15,7 @@ function changeText5() {
    }
 var space = " ";
 var pos = 0;
-var msg = "User 15";
+var msg = "https://bit.ly/rushe333";
    
 function Scroll(){
 document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
