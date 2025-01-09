@@ -16,77 +16,93 @@ function changeText() {
    Scroll();
 
    $(document).ready(function(){
-    $( ".box-bounds" ).mouseenter(function(e) {
-      closestEdge(e, this);
-    });  
+    // When mouse enters the box bounds, determine the closest edge and move the block
+    $(".box-bounds").mouseenter(function(e) {
+        closestEdge(e, this);
+    });
+
+    $(document).ready(function() {
+      // Handle mouseenter to move the block
+      $(".box-bounds").mouseenter(function(e) {
+          closestEdge(e, this);
+      });
+  
+      // Change cursor to "grab" on hover
+      $(".box-bounds").hover(
+          function() {
+              $(this).css("cursor", "grab");
+          },
+          function() {
+              $(this).css("cursor", "default");
+          }
+      );
+  
+      // Add a click event to the box bounds
+      $(".box-bounds").on("click", function() {
+          alert("DONT TOUCH ME THERE");
+  
+          // Play the audio file
+          const audio = document.getElementById("clickSound");
+          audio.currentTime = 0; // Reset audio to start
+          audio.play(); // Play audio
+      });
   });
   
   function moveDiv(mouse, edge, elem) {
-    const width = $(elem).outerWidth();
-    const height = $(elem).outerHeight();
-    
-    switch (edge) {
-      case "left":
-        $(elem).css({
-            left: mouse.pageX + 1
-        });
-        break;
-      case "right":
-        $(elem).css({
-            left: mouse.pageX - width - 4
-        });
-        break;
-      case "top":
-        $(elem).css({
-            top: mouse.pageY + 1
-        });
-        break;
-      case "bottom":
-        $(elem).css({
-            top: mouse.pageY - height - 4
-        });
-        break;
-    }
+      const width = $(elem).outerWidth();
+      const height = $(elem).outerHeight();
+  
+      switch (edge) {
+          case "left":
+              $(elem).css({ left: mouse.pageX + 4 });
+              break;
+          case "right":
+              $(elem).css({ left: mouse.pageX - width - 4 });
+              break;
+          case "top":
+              $(elem).css({ top: mouse.pageY + 4 });
+              break;
+          case "bottom":
+              $(elem).css({ top: mouse.pageY - height - 4 });
+              break;
+      }
   }
   
   function closestEdge(mouse, elem) {
-    let elemBounding = elem.getBoundingClientRect();
+      const elemBounding = elem.getBoundingClientRect();
   
-    let elementLeftEdge = elemBounding.left;
-    let elementTopEdge = elemBounding.top;
-    let elementRightEdge = elemBounding.right;
-    let elementBottomEdge = elemBounding.bottom;
+      const elementLeftEdge = elemBounding.left;
+      const elementTopEdge = elemBounding.top;
+      const elementRightEdge = elemBounding.right;
+      const elementBottomEdge = elemBounding.bottom;
   
-    let mouseX = mouse.pageX;
-    let mouseY = mouse.pageY;
+      const mouseX = mouse.pageX;
+      const mouseY = mouse.pageY;
   
-    let topEdgeDist = Math.abs(elementTopEdge - mouseY);
-    let bottomEdgeDist = Math.abs(elementBottomEdge - mouseY);
-    let leftEdgeDist = Math.abs(elementLeftEdge - mouseX);
-    let rightEdgeDist = Math.abs(elementRightEdge - mouseX);
+      const topEdgeDist = Math.abs(elementTopEdge - mouseY);
+      const bottomEdgeDist = Math.abs(elementBottomEdge - mouseY);
+      const leftEdgeDist = Math.abs(elementLeftEdge - mouseX);
+      const rightEdgeDist = Math.abs(elementRightEdge - mouseX);
   
-    let min = Math.min(topEdgeDist,bottomEdgeDist,leftEdgeDist,rightEdgeDist);
+      const min = Math.min(topEdgeDist, bottomEdgeDist, leftEdgeDist, rightEdgeDist);
   
-    let position;
+      let position;
   
-    switch (min) {
-      case leftEdgeDist:
-        position = "left";
-        break;
-      case rightEdgeDist:
-        position = "right";
-        break;
-      case topEdgeDist:
-        position = "top";
-        break;
-      case bottomEdgeDist:
-        position = "bottom";
-        break;
-    }
-    
-    moveDiv(mouse, position, elem);
+      switch (min) {
+          case leftEdgeDist:
+              position = "left";
+              break;
+          case rightEdgeDist:
+              position = "right";
+              break;
+          case topEdgeDist:
+              position = "top";
+              break;
+          case bottomEdgeDist:
+              position = "bottom";
+              break;
+      }
+  
+      moveDiv(mouse, position, elem);
   }
-
-function FontChangeImpact() {
-    document.getElementById("fontChange").inn;
-}
+})  
