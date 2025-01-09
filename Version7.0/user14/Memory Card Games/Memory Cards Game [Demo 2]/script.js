@@ -3,7 +3,7 @@ timeTag = document.querySelector(".time b"),
 flipsTag = document.querySelector(".flips b"),
 refreshBtn = document.querySelector(".details button");
 
-let maxTime = 20;
+let maxTime = 30;
 let timeLeft = maxTime;
 let flips = 0;
 let matchedCard = 0;
@@ -73,7 +73,7 @@ function shuffleCard() {
     flipsTag.innerText = flips;
     disableDeck = isPlaying = false;
 
-    let arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
 
     cards.forEach((card, index) => {
