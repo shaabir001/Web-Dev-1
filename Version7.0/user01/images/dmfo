@@ -283,5 +283,6 @@
       document.getElementById('guess').value = ""; // Clear the input field
     }
   </script>
+  
 </body>
 </html>
