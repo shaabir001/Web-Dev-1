@@ -1,0 +1,48 @@
+.button {
+	background-color: #000000;
+	border: 1px solid green; /* Green Border
+	color: gray; ?* Gray text */
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td{
+	padding:20px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+.
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}.title{
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  <span class="title title-largeScale"> Example of a Heading TitleL</span>
+    font-size: 2rem;
+  }
+  
+  <span class+"title title-smallScale"> Example of a Footer Title</span>
+    font-size: .5rem;
+  }

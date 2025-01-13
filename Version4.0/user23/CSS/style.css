@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -126,3 +128,16 @@ h6 {
   } 
  #footerTable {background-color: #b1eef6}
  #hireButtons {background-color: #2e466e;}
+
+ #knowledge > * {
+	border: 3px red solid;
+  }
+  div li::marker{
+	color: red;
+  }
+  #knowledge li::marker{
+	content:"😜 ";
+  }
+   div li:hover {
+	background-color: black;
+  }
