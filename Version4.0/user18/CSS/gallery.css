@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300..700&display=swap');
 #gallery {
-    font-family: "Orbitron", sans-serif;
     line-height: 1.5em;
     text-align: center;
   }
@@ -60,3 +59,4 @@ a {
     padding: 0 20px 20px 20px;
     text-align: left;
   }
+  
