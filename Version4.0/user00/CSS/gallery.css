@@ -22,7 +22,7 @@ color: 1000px;
 
 .flipper {
   position: relative;
-  transition: 0.6s;
+  transition: 1.6s;
   transform-style: preserve-3d;
 }
 
@@ -41,7 +41,7 @@ color: 1000px;
 }
 
 .back {
-  transform: rotateY(180deg);
+  transform: rotateY(540deg);
 }
 
 img {
@@ -54,7 +54,7 @@ img {
 }
 
 .container:hover .flipper {
-  transform: rotateY(180deg);
+  transform: rotateY(540deg);
 }
 
 a {
