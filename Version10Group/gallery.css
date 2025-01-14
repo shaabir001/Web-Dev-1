@@ -54,14 +54,14 @@ section p {
 }
 
 /* Example cards grid */
-.demo-grid {
+.example-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 40px;
 }
 
-.demo-card {
+.example-card {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
