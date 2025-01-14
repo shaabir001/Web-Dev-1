@@ -7,7 +7,6 @@
     <head>
 
     <title>Hire Me For Your Web Development Needs</title>
-
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,29 +24,7 @@
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-            let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3500); // Change image every 2 seconds
-}
+   
 
         </script>
     <!-- These are needed to get the responsive menu to work -->
@@ -208,43 +185,38 @@ padding: 20px 10px;  /* Vertical  Horizontal */
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 <p>FINAL FANTASY: The franchise are all different stories with different plots, characters and timelines but all share the same name.</p>
         <!-- Slideshow container -->
+         <br>
+<!-- Define the slideshow container -->
+<div id="slideshow">
+  <div class="slide-wrapper">
 
+      <div class="slide">
+          <h1 class="slide-number">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/3/2024/06/Elden-Ring-DLC-Access-7da5f1b.jpg?quality=90&resize=980,654"width="800"hieght="600"alt="eldenring1">
+              tittle
+          </h1>
+      </div>
+      <div class="slide">
+        <img src="https://media.steelseriescdn.com/blog/posts/elden-ring-how-to-start-dlc/elden-ring-dlc-banner_714f7df9a2b5457fa92605bac5d5d837.jpg"width="800"hieght="600" alt="eldenring2">
+          <h1 class="slide-number">
+              tittle
+          </h1>
+      </div>
+      <div class="slide">
+          <h1 class="slide-number">
+            <img src="" alt="">
+              tittle
+          </h1>
+      </div>
+      <div class="slide">
+        <img src="" alt="">
+          <h1 class="slide-number">
+              tittle
+          </h1>
+      </div>
+  </div>
+</div>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="slideshow-container"></div>
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000048000/ffc18f055655638ef75df2716fadd93be2825f56efcdac0e72997ca8304c7410" 
-      style="width:100%">
-      <div class="text">Caption Text</div> 
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="https://fotografias.larazon.es/clipping/cmsimages01/2023/11/21/26030EEB-EAD1-4747-9B47-3F01DC32A5DA/final-fantasy-vii-rebirth-repasamos-trama-mas-reciente-juego-cara-estreno_98.jpg?crop=1200,675,x0,y51&width=1900&height=1069&optimize=low&format=webply"
-       style="width: 100%">
-      <div class="text">Caption Two</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="https://cdn.wallpapersafari.com/73/10/v98ruC.jpg"
-       style="width:99%">
-      <div class="text">Caption Three</div>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <!-- Next and previous buttons -->
-    
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
 
             <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
