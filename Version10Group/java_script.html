@@ -54,10 +54,16 @@
     margin-bottom: 20px;
     border: 5px, double, red;
     text-align: center;
-}
-p {
-    text-align: left;
-}
+        }
+        p {
+        text-align: left;
+        }
+        .Copy-Paste-Heading {
+            font-family: monospace;
+        }
+        img {
+            display:inline;
+        }
     </style>
 </head>
 
@@ -72,8 +78,8 @@ p {
 
     </Nav>
 
-    <h3>
-        <center>Basic JavaScript</center>
+    <h3 style="display:inline">
+        <center>Basic JavaScript <img src="Science and Tech.png" style="width:45px;height:50px"></center> 
     </h3>
     <h4>
         <center>Making Your WebPage Dynamic</center>
@@ -86,7 +92,8 @@ p {
             <p>While you can make cool WebPages just using HTML with CSS, there is a whole other world opened up by
                 introducing Javascript into a WebPage. JavaScript is a scripting language designed for the purpose of
                 working with WebPages. It allows you to change CSS and HTML information. In this lesson we will start learning the basics of intergrating JavaScript into your website, making your webpages more dynamic and interactive.</p>
-            Copy and Paste this code into your body
+                <br>
+            <div class="Copy-Paste-Heading">Copy and Paste this code into your body</div>
             <pre class="codeeditorcontent"><div class="Example-Tag">&ltscript&gt;</div>    alert("This is an alert")<div class="Example-Tag">&lt/script&gt;</div></pre>
             <br>
             <p>The code you copy and pasted above executes a pop up alert on your browser. You have probably seen this on websites before, usually an annoying alert, telling you an error or problem. Right now, the code executes this as soon as the html reads the scripted code. This means the alert shows up as soon as the page loads, this is as you can guess, an annoying and not so amazing web design feature. We can fix this however. All we need to do is make our own function</p>
