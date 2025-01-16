@@ -60,8 +60,8 @@
         function myfunny() {
   alert("Welcome! This page teaches you the essentials of working with Bootstrap. [Made by Ben Dang]");
 }
-    btn.onclick = function () {
-  alert("Thanks for learning about Bootstrap! Make sure to check out the Bootstrap pages about Navbar and Footer!");
+    function myFunction () {
+        document.getElementById("demo").innerHTML = alert("Thanks for learning about Bootstrap! Make sure to check out the Bootstrap pages about Navbar and Footer!");
 }
     </script>
 </head>
@@ -235,11 +235,19 @@ vs.
     </div>
     <div class="col-3 text-center"><img src="/Version6.0/user21/images/Screenshot_2025-01-16_at_8.57.57_AM-removebg-preview.png"></div>
 
-<p class="space">ㅤ</p>
+
+
+
+<div class="col-3 text-center"></div>
+<p class="col-6 text-center"><div class="alert alert-danger" role="alert">
+    That's a basic rundown on Bootstrap. Remember, there's always more to learn about Bootstrap, and you should do research on Bootstrap functions yourself too!
+  </div>
+<div class="col-3 text-center"></div>
+
 <p class="space">ㅤ</p>
 
 <div class="col-12 text-center">
-    <a href="/Version10Group/Index.html" class="btn btn-outline-danger btn-block">Return to Home Page</a>
+    <a href="/Version10Group/Index.html" class="btn btn-outline-danger btn-block" id="demo" onclick="myFunction()">Return to Home Page</a>
 </div>
     </main>
     
