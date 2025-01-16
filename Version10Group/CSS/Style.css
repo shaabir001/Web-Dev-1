@@ -21,15 +21,15 @@ table >* {
 }
 
 nav, footer {
-background-color: red;
+background-color: black;
 color: whitesmoke;
 word-spacing: 5px;
 }
 
 nav {
-    border-bottom: black, 5px, solid;
+    border-bottom: red, 5px, solid;
 }
 
 footer {
-    border-top: black, 5px, solid;
+    border-top: red, 5px, solid;
 }
