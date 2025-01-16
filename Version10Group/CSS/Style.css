@@ -27,9 +27,20 @@ word-spacing: 5px;
 }
 
 nav {
-    border-bottom: red, 5px, solid;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: red;
 }
 
 footer {
-    border-top: red, 5px, solid;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: red;
+    margin-top: auto;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
