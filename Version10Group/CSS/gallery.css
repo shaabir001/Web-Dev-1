@@ -146,4 +146,23 @@ img {
 }
 
 
+.glow {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #1a9621, 0 0 30px #159537, 0 0 40px #178a30, 0 0 50px #109c23, 0 0 60px #108529, 0 0 70px #089553;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ee290b, 0 0 40px #f60707, 0 0 50px #f10606, 0 0 60px #f60303, 0 0 70px #f80202, 0 0 80px #ed0303;
+    }
+  }
+
+
 
